@@ -1,100 +1,99 @@
 /* Content Styles
 ---------------------------------------- */
-
+#page-body #text{
+	color: red;
+}
 ul.topiclist {
 	display: block;
 	list-style-type: none;
 	margin: 0;
 }
-
+.forum-category a{
+color: var(--light-grey);
+font-weight: 600;
+font-size: 28px;
+}
 ul.topiclist li {
-	display: block;
-	list-style-type: none;
-	margin: 0;
-}
-
-ul.topiclist dl {
-	position: relative;
-}
-
-ul.topiclist li.row dl {
-	margin: 2px 0;
-}
-
-ul.topiclist dt, ul.topiclist dd {
-	display: block;
 	float: left;
+  display: block;
+  width: 33.3333333%;
+  border: none;
+  padding: 0;
 }
+ul.topiclist li .row-item {
+	  margin:5px;
+    position: relative;
 
-ul.topiclist dt {
-	width: 100%;
-	margin-right: -440px;
-	font-size: 1.1em;
+		border-radius: 7px;
+		transition: transform .1s;
+    background-color: var(--dark);
 }
-
-ul.topiclist.missing-column dt {
-	margin-right: -345px;
+ul.topiclist li .row-item a.forumtitle{
+	  width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    min-height: 200px;
 }
-
-ul.topiclist.two-long-columns dt {
-	margin-right: -250px;
+.topics li .row-item a.forumtitle{
+	min-height: 140px!important;
 }
-
-ul.topiclist.two-columns dt {
-	margin-right: -80px;
+ul.topiclist li .row-item a.forumtitle:hover{
+	text-decoration: none;
+	color: var(--blue);
 }
-
-ul.topiclist dt .list-inner {
-	margin-right: 440px;
-	padding-left: 5px;
-	padding-right: 5px;
+ul.topiclist li .row-item:hover {
+    transform: scale(1.04);
+	}
+.row_1 div{
+  	padding-left: 84px;
+    min-height: 100px;
 }
-
-ul.topiclist.missing-column dt .list-inner {
-	margin-right: 345px;
+.row_1 div .title-title{
+  	font-size: 18px;
 }
-
-ul.topiclist.two-long-columns dt .list-inner {
-	margin-right: 250px;
+.row_1 div .title-description{
+  	color:var(--light-grey);
+		display: block;
+		margin-top: 10px;
+		font-size: 14px;
 }
-
-ul.topiclist.two-columns dt .list-inner {
-	margin-right: 80px;
-}
-
-ul.topiclist dd {
-	border-left: 1px solid transparent;
-	padding: 4px 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-ul.topiclist li.row dd {
-	padding: 4px 0 999px 0;
-	margin-bottom: -995px;
-}
-
-ul.topiclist dfn {
-	/* Labels for post/view counts */
-	position: absolute;
-	left: -999px;
-	width: 990px;
-}
-
 .forum-image {
+float: left;
+}
+.forum-image img{
+	height: 70px;
+}
+.row_2 div{
 	float: left;
-	padding-top: 5px;
-	margin-right: 5px;
+	width: 25%;
+	color: var(--light-grey);
+	font-size: 14px;
 }
-
-li.row {
-	border-top: 1px solid transparent;
-	border-bottom: 1px solid transparent;
+.row_2 .lastpost{
+		width: 50%;
 }
-
-li.row strong {
-	font-weight: normal;
+.row_2 .lastpost time{
+		color:var(--blue);
+}
+.topic div{
+	padding-left: 84px;
+	 min-height: 60px;
+}
+dfn{
+	font-style: normal;
+	font-weight: bold;
+	text-transform: capitalize;
+	display: block;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	ul.topiclist li.row {
+    width: 50%;
+}
+}
+@media (max-width: 767px){
+	ul.topiclist li.row {
+    width: 100%;
+}
 }
 
 li.header dt, li.header dd {
@@ -104,7 +103,7 @@ li.header dt, li.header dd {
 	padding-top: 2px;
 	padding-bottom: 2px;
 	font-size: 1em;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family:  'Rubik', sans-serif;
 	text-transform: uppercase;
 }
 
@@ -136,43 +135,6 @@ li.header dl.row-item dt .list-inner {
 }
 
 /* Forum list column styles */
-.row .list-inner { padding: 4px 0; }
-
-dl.row-item {
-	background-position: 10px 50%;		/* Position of folder icon */
-	background-repeat: no-repeat;
-	background-size: 32px;
-}
-
-dl.row-item dt {
-	background-repeat: no-repeat;
-	background-position: 5px 95%;		/* Position of topic icon */
-	background-size: 17px;
-}
-
-dl.row-item dt .list-inner {
-	padding-left: 52px;					/* Space for folder icon */
-}
-
-dl.row-item dt, dl.row-item dd {
-	min-height: 35px;
-}
-
-dl.row-item dt a {
-	display: inline;
-}
-
-dl a.row-item-link {						/* topic row icon links */
-	display: block;
-	width: 30px;
-	height: 30px;
-	padding: 0;
-	position: absolute;
-	top: 50%;
-	left: 0;
-	margin-top: -15px;
-	margin-left: 9px;
-}
 
 dd.posts, dd.topics, dd.views, dd.extra, dd.mark {
 	width: 80px;
@@ -254,7 +216,7 @@ dd.option {
 	margin-bottom: 0.3em !important;
 	text-transform: none;
 	border: none;
-	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-family:  'Rubik', sans-serif;
 	line-height: 125%;
 }
 
@@ -330,22 +292,24 @@ dd.option {
 	min-height: 3em;
 	overflow: hidden;
 	line-height: 1.4em;
-	font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-family: 'Rubik', sans-serif;
 	font-size: 1em;
 	padding-bottom: 1px;
 }
 
 .content h2, .panel h2 {
-	font-weight: normal;
+	font-weight: 600;
 	border-bottom: 1px solid transparent;
-	font-size: 1.6em;
+	font-size: 28px;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 	padding-bottom: 0.5em;
 }
 
 .panel h3 {
-	margin: 0.5em 0;
+	padding: 0.5em 0;
+	font-weight: 600;
+	font-size: 28px;
 }
 
 .panel p {
@@ -353,24 +317,34 @@ dd.option {
 	margin-bottom: 1em;
 	line-height: 1.4em;
 }
+.bg3{
+	margin-top: 0;
+}
 
 .content p {
-	font-family: "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-family:  'Rubik', sans-serif;
 	font-size: 1.2em;
 	margin-bottom: 1em;
 	line-height: 1.4em;
 }
-
+.faq-title{
+	font-weight: 600;
+	font-size: 28px;
+}
 dl.faq {
-	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	font-family: 'Rubik', sans-serif;
 	font-size: 1.1em;
 	margin-top: 1em;
 	margin-bottom: 2em;
 	line-height: 1.4em;
+	background-color: var(--dark-04dp);
+	border-radius: 7px;
+	padding: 5px;
 }
 
 dl.faq dt {
 	font-weight: bold;
+	font-size: 13px;
 }
 
 .content dl.faq {
@@ -394,7 +368,7 @@ dl.faq dt {
 p.author {
 	margin-bottom: 0.6em;
 	padding: 0 0 5px 0;
-	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-family: 'Rubik', sans-serif;
 	font-size: 1em;
 	line-height: 1.2em;
 	clear: both;
@@ -434,7 +408,7 @@ dd .signature {
 
 /* Post noticies */
 .notice {
-	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	font-family:  'Rubik', sans-serif;
 	width: auto;
 	margin-top: 1.5em;
 	padding-top: 0.2em;
@@ -543,7 +517,7 @@ blockquote .codebox {
 }
 
 .attachbox dt {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family:  'Rubik', sans-serif;
 	text-transform: uppercase;
 }
 
@@ -594,7 +568,7 @@ div.inline-attachment p {
 }
 
 dl.file {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-family:  'Rubik', sans-serif;
 	display: block;
 }
 
@@ -603,7 +577,7 @@ dl.file dt {
 	margin: 0;
 	padding: 0;
 	font-weight: bold;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-family:  'Rubik', sans-serif;
 }
 
 dl.file dd {
@@ -619,7 +593,7 @@ dl.thumbnail img {
 
 dl.thumbnail dd {
 	font-style: italic;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-family: 'Rubik', sans-serif;
 }
 
 .attachbox dl.thumbnail dd {
@@ -633,7 +607,7 @@ dl.thumbnail dt a:hover img {
 /* Post poll styles
 ----------------------------------------*/
 fieldset.polls {
-	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-family:  'Rubik', sans-serif;
 }
 
 fieldset.polls dl {
@@ -677,7 +651,7 @@ fieldset.polls dd input {
 
 fieldset.polls dd div {
 	text-align: right;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family:  'Rubik', sans-serif;
 	font-weight: bold;
 	padding: 2px 2px 0 2px;
 	overflow: visible;

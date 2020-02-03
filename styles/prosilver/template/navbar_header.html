@@ -147,7 +147,7 @@
 		<!-- IF S_DISPLAY_PM -->
 			<li class="rightside" data-skip-responsive="true">
 				<a href="{U_PRIVATEMSGS}" role="menuitem">
-					<i class="icon fa-inbox fa-fw" aria-hidden="true"></i><span>{L_PRIVATE_MESSAGES} </span><strong class="badge<!-- IF not PRIVATE_MESSAGE_COUNT --> hidden<!-- ENDIF -->">{PRIVATE_MESSAGE_COUNT}</strong>
+					<i class="icon fa-comment fa-fw" aria-hidden="true"></i><span>{L_PRIVATE_MESSAGES} </span><strong class="badge<!-- IF not PRIVATE_MESSAGE_COUNT --> hidden<!-- ENDIF -->">{PRIVATE_MESSAGE_COUNT}</strong>
 				</a>
 			</li>
 		<!-- ENDIF -->
@@ -198,7 +198,14 @@
 			<!-- EVENT overall_header_breadcrumb_append -->
 		</li>
 		<!-- EVENT overall_header_breadcrumbs_after -->
-
+		<li class="rightside" title="Dark Mode" data-last-responsive="true">
+			<div class="theme-switch-wrapper">
+			<label class="theme-switch" for="checkbox">
+				<input type="checkbox" id="checkbox" />
+					<div class="slider round"></div>
+					</label>
+					</div>
+		</li>
 		<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
 			<li class="rightside responsive-search">
 				<a href="{U_SEARCH}" title="{L_SEARCH_ADV_EXPLAIN}" role="menuitem">

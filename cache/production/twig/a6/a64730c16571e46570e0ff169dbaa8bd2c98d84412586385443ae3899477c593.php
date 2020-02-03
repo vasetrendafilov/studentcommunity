@@ -257,9 +257,8 @@ class __TwigTemplate_52b6d60012a3fc0bd09caa202e3a3d0ba54b904121adeeec7b03c00dc22
             echo "\">";
             echo $this->extensions['phpbb\template\twig\extension']->lang("PRIVACY");
             echo "</a></strong></p>
-\t\t\t<hr class=\"dashed\" />
 \t\t\t<p><a href=\"";
-            // line 60
+            // line 59
             echo ($context["U_REGISTER"] ?? null);
             echo "\" class=\"button2\">";
             echo $this->extensions['phpbb\template\twig\extension']->lang("REGISTER");
@@ -270,12 +269,12 @@ class __TwigTemplate_52b6d60012a3fc0bd09caa202e3a3d0ba54b904121adeeec7b03c00dc22
 \t</div>
 ";
         }
-        // line 66
+        // line 65
         echo "
 </form>
 
 ";
-        // line 69
+        // line 68
         $location = "overall_footer.html";
         $namespace = false;
         if (strpos($location, '@') === 0) {
@@ -283,7 +282,7 @@ class __TwigTemplate_52b6d60012a3fc0bd09caa202e3a3d0ba54b904121adeeec7b03c00dc22
             $previous_look_up_order = $this->env->getNamespaceLookUpOrder();
             $this->env->setNamespaceLookUpOrder(array($namespace, '__main__'));
         }
-        $this->loadTemplate("overall_footer.html", "login_body.html", 69)->display($context);
+        $this->loadTemplate("overall_footer.html", "login_body.html", 68)->display($context);
         if ($namespace) {
             $this->env->setNamespaceLookUpOrder($previous_look_up_order);
         }
@@ -301,7 +300,7 @@ class __TwigTemplate_52b6d60012a3fc0bd09caa202e3a3d0ba54b904121adeeec7b03c00dc22
 
     public function getDebugInfo()
     {
-        return array (  279 => 69,  274 => 66,  263 => 60,  252 => 58,  248 => 57,  244 => 56,  238 => 52,  236 => 51,  230 => 47,  227 => 46,  214 => 45,  212 => 44,  202 => 39,  196 => 36,  192 => 35,  189 => 34,  182 => 31,  176 => 30,  173 => 29,  170 => 28,  167 => 27,  154 => 26,  150 => 25,  148 => 24,  145 => 23,  142 => 22,  133 => 21,  124 => 20,  122 => 19,  116 => 18,  109 => 17,  99 => 14,  92 => 13,  89 => 12,  83 => 11,  75 => 10,  66 => 8,  52 => 3,  49 => 2,  37 => 1,);
+        return array (  278 => 68,  273 => 65,  262 => 59,  252 => 58,  248 => 57,  244 => 56,  238 => 52,  236 => 51,  230 => 47,  227 => 46,  214 => 45,  212 => 44,  202 => 39,  196 => 36,  192 => 35,  189 => 34,  182 => 31,  176 => 30,  173 => 29,  170 => 28,  167 => 27,  154 => 26,  150 => 25,  148 => 24,  145 => 23,  142 => 22,  133 => 21,  124 => 20,  122 => 19,  116 => 18,  109 => 17,  99 => 14,  92 => 13,  89 => 12,  83 => 11,  75 => 10,  66 => 8,  52 => 3,  49 => 2,  37 => 1,);
     }
 
     public function getSourceContext()

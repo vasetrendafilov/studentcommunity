@@ -390,9 +390,6 @@ li.breadcrumbs span:first-child > a {
 
 .rtl ul.topiclist dd {
 	float: right;
-	border-right-width: 1px;
-	border-right-style: solid;
-	border-left: none;
 }
 
 .rtl ul.topiclist dfn {
@@ -863,17 +860,6 @@ li.breadcrumbs span:first-child > a {
 	margin-right: 0;
 }
 
-/* Quick-login on index page */
-.rtl fieldset.quick-login input.inputbox {
-	margin-left: 5px;
-	margin-right: 0;
-}
-
-.rtl fieldset.quick-login label {
-	padding-left: 2px;
-	padding-right: 0;
-}
-
 /* Display options on viewtopic/viewforum pages  */
 .rtl fieldset.display-options label {
 	padding-left: 2px;
@@ -1081,7 +1067,7 @@ li.breadcrumbs span:first-child > a {
 	.captcha-panel dd.captcha {
 		margin-right: 0;
 	}
-	
+
 	.rtl p.responsive-center {
 		float: none;
 		text-align: center;

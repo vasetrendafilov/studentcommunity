@@ -59,410 +59,194 @@ class __TwigTemplate_cea8d65df7d96e635a69736afb7dee544faec71730a311b4a9d11404bed
             echo "\t";
             if (((twig_get_attribute($this->env, $this->source, $context["forumrow"], "S_IS_CAT", [], "any", false, false, false, 11) || twig_get_attribute($this->env, $this->source, $context["forumrow"], "S_FIRST_ROW", [], "any", false, false, false, 11)) || twig_get_attribute($this->env, $this->source, $context["forumrow"], "S_NO_CAT", [], "any", false, false, false, 11))) {
                 // line 12
+                echo "\t";
+                if (twig_get_attribute($this->env, $this->source, $context["forumrow"], "S_IS_CAT", [], "any", false, false, false, 12)) {
+                    // line 13
+                    echo " <h2 class=\"forum-category\">
+\t<a href=\"";
+                    // line 14
+                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "U_VIEWFORUM", [], "any", false, false, false, 14);
+                    echo "\">";
+                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "FORUM_NAME", [], "any", false, false, false, 14);
+                    echo "</a></h2>
+\t";
+                }
+                // line 16
                 echo "\t\t<div class=\"forabg\">
 \t\t\t<div class=\"inner\">
-\t\t\t<ul class=\"topiclist\">
-\t\t\t\t<li class=\"header\">
-\t\t\t\t\t";
-                // line 16
-                // line 17
-                echo "\t\t\t\t\t<dl class=\"row-item\">
-\t\t\t\t\t\t<dt><div class=\"list-inner\">";
-                // line 18
-                if (twig_get_attribute($this->env, $this->source, $context["forumrow"], "S_IS_CAT", [], "any", false, false, false, 18)) {
-                    echo "<a href=\"";
-                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "U_VIEWFORUM", [], "any", false, false, false, 18);
-                    echo "\">";
-                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "FORUM_NAME", [], "any", false, false, false, 18);
-                    echo "</a>";
-                } else {
-                    echo $this->extensions['phpbb\template\twig\extension']->lang("FORUM");
-                }
-                echo "</div></dt>
-\t\t\t\t\t\t<dd class=\"topics\">";
-                // line 19
-                echo $this->extensions['phpbb\template\twig\extension']->lang("TOPICS");
-                echo "</dd>
-\t\t\t\t\t\t<dd class=\"posts\">";
-                // line 20
-                echo $this->extensions['phpbb\template\twig\extension']->lang("POSTS");
-                echo "</dd>
-\t\t\t\t\t\t<dd class=\"lastpost\"><span>";
-                // line 21
-                echo $this->extensions['phpbb\template\twig\extension']->lang("LAST_POST");
-                echo "</span></dd>
-\t\t\t\t\t</dl>
-\t\t\t\t\t";
-                // line 23
-                // line 24
-                echo "\t\t\t\t</li>
-\t\t\t</ul>
 \t\t\t<ul class=\"topiclist forums\">
 \t";
             }
-            // line 28
+            // line 20
             echo "\t";
-            // line 29
+            // line 21
             echo "
 \t";
-            // line 30
-            if ( !twig_get_attribute($this->env, $this->source, $context["forumrow"], "S_IS_CAT", [], "any", false, false, false, 30)) {
-                // line 31
+            // line 22
+            if ( !twig_get_attribute($this->env, $this->source, $context["forumrow"], "S_IS_CAT", [], "any", false, false, false, 22)) {
+                // line 23
                 echo "\t\t";
-                // line 32
+                // line 24
                 echo "\t\t<li class=\"row\">
 \t\t\t";
-                // line 33
-                // line 34
-                echo "\t\t\t<dl class=\"row-item ";
-                echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "FORUM_IMG_STYLE", [], "any", false, false, false, 34);
-                echo "\">
-\t\t\t\t<dt title=\"";
-                // line 35
-                echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "FORUM_FOLDER_IMG_ALT", [], "any", false, false, false, 35);
-                echo "\">
-\t\t\t\t\t";
-                // line 36
-                if (twig_get_attribute($this->env, $this->source, $context["forumrow"], "S_UNREAD_FORUM", [], "any", false, false, false, 36)) {
-                    echo "<a href=\"";
-                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "U_VIEWFORUM", [], "any", false, false, false, 36);
-                    echo "\" class=\"row-item-link\"></a>";
-                }
-                // line 37
-                echo "\t\t\t\t\t<div class=\"list-inner\">
+                // line 25
+                // line 26
+                echo "\t\t\t<div class=\"row-item\">
+\t\t\t\t\t<a href=\"";
+                // line 27
+                echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "U_VIEWFORUM", [], "any", false, false, false, 27);
+                echo "\" class=\"forumtitle\">
+\t\t\t\t<div title=\"";
+                // line 28
+                echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "FORUM_FOLDER_IMG_ALT", [], "any", false, false, false, 28);
+                echo "\" class=\"row_1\">
 \t\t\t\t\t\t";
-                // line 38
-                if ((($context["S_ENABLE_FEEDS"] ?? null) && twig_get_attribute($this->env, $this->source, $context["forumrow"], "S_FEED_ENABLED", [], "any", false, false, false, 38))) {
-                    // line 39
-                    echo "\t\t\t\t\t\t\t<!--
-\t\t\t\t\t\t\t\t<a class=\"feed-icon-forum\" title=\"";
-                    // line 40
-                    echo $this->extensions['phpbb\template\twig\extension']->lang("FEED");
-                    echo " - ";
-                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "FORUM_NAME", [], "any", false, false, false, 40);
-                    echo "\" href=\"";
-                    echo ($context["U_FEED"] ?? null);
-                    echo "?f=";
-                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "FORUM_ID", [], "any", false, false, false, 40);
-                    echo "\">
-\t\t\t\t\t\t\t\t\t<i class=\"icon fa-rss-square fa-fw icon-orange\" aria-hidden=\"true\"></i><span class=\"sr-only\">";
-                    // line 41
-                    echo $this->extensions['phpbb\template\twig\extension']->lang("FEED");
-                    echo " - ";
-                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "FORUM_NAME", [], "any", false, false, false, 41);
-                    echo "</span>
-\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t-->
-\t\t\t\t\t\t";
-                }
-                // line 45
-                echo "\t\t\t\t\t\t";
-                if (twig_get_attribute($this->env, $this->source, $context["forumrow"], "FORUM_IMAGE", [], "any", false, false, false, 45)) {
-                    // line 46
+                // line 29
+                if (twig_get_attribute($this->env, $this->source, $context["forumrow"], "FORUM_IMAGE", [], "any", false, false, false, 29)) {
+                    // line 30
                     echo "\t\t\t\t\t\t\t";
-                    // line 47
+                    // line 31
                     echo "\t\t\t\t\t\t\t<span class=\"forum-image\">";
-                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "FORUM_IMAGE", [], "any", false, false, false, 47);
+                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "FORUM_IMAGE", [], "any", false, false, false, 31);
                     echo "</span>
 \t\t\t\t\t\t\t";
-                    // line 48
-                    // line 49
+                    // line 32
+                    // line 33
                     echo "\t\t\t\t\t\t";
                 }
-                // line 50
-                echo "\t\t\t\t\t\t<a href=\"";
-                echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "U_VIEWFORUM", [], "any", false, false, false, 50);
-                echo "\" class=\"forumtitle\">";
-                echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "FORUM_NAME", [], "any", false, false, false, 50);
-                echo "</a>
-\t\t\t\t\t\t";
-                // line 51
-                if (twig_get_attribute($this->env, $this->source, $context["forumrow"], "FORUM_DESC", [], "any", false, false, false, 51)) {
-                    echo "<br />";
-                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "FORUM_DESC", [], "any", false, false, false, 51);
-                }
-                // line 52
-                echo "\t\t\t\t\t\t";
-                if (twig_get_attribute($this->env, $this->source, $context["forumrow"], "MODERATORS", [], "any", false, false, false, 52)) {
-                    // line 53
-                    echo "\t\t\t\t\t\t\t<br /><strong>";
-                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "L_MODERATOR_STR", [], "any", false, false, false, 53);
-                    echo $this->extensions['phpbb\template\twig\extension']->lang("COLON");
-                    echo "</strong> ";
-                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "MODERATORS", [], "any", false, false, false, 53);
-                    echo "
-\t\t\t\t\t\t";
-                }
-                // line 55
-                echo "\t\t\t\t\t\t";
-                if ((twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, $context["forumrow"], "subforum", [], "any", false, false, false, 55)) && twig_get_attribute($this->env, $this->source, $context["forumrow"], "S_LIST_SUBFORUMS", [], "any", false, false, false, 55))) {
-                    // line 56
-                    echo "\t\t\t\t\t\t\t";
-                    // line 57
-                    echo "\t\t\t\t\t\t\t<br /><strong>";
-                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "L_SUBFORUM_STR", [], "any", false, false, false, 57);
-                    echo $this->extensions['phpbb\template\twig\extension']->lang("COLON");
-                    echo "</strong>
-\t\t\t\t\t\t\t";
-                    // line 58
-                    $context['_parent'] = $context;
-                    $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["forumrow"], "subforum", [], "any", false, false, false, 58));
-                    foreach ($context['_seq'] as $context["_key"] => $context["subforum"]) {
-                        // line 59
-                        echo "\t\t\t\t\t\t\t\t";
-                        echo "<a href=\"";
-                        echo twig_get_attribute($this->env, $this->source, $context["subforum"], "U_SUBFORUM", [], "any", false, false, false, 59);
-                        echo "\" class=\"subforum";
-                        if (twig_get_attribute($this->env, $this->source, $context["subforum"], "S_UNREAD", [], "any", false, false, false, 59)) {
-                            echo " unread";
-                        } else {
-                            echo " read";
-                        }
-                        echo "\" title=\"";
-                        if (twig_get_attribute($this->env, $this->source, $context["subforum"], "S_UNREAD", [], "any", false, false, false, 59)) {
-                            echo $this->extensions['phpbb\template\twig\extension']->lang("UNREAD_POSTS");
-                        } else {
-                            echo $this->extensions['phpbb\template\twig\extension']->lang("NO_UNREAD_POSTS");
-                        }
-                        echo "\">
-\t\t\t\t\t\t\t\t\t<i class=\"icon ";
-                        // line 60
-                        if (twig_get_attribute($this->env, $this->source, $context["subforum"], "IS_LINK", [], "any", false, false, false, 60)) {
-                            echo "fa-external-link";
-                        } else {
-                            echo "fa-file-o";
-                        }
-                        echo " fa-fw ";
-                        if (twig_get_attribute($this->env, $this->source, $context["subforum"], "S_UNREAD", [], "any", false, false, false, 60)) {
-                            echo " icon-red";
-                        } else {
-                            echo " icon-blue";
-                        }
-                        echo " icon-md\" aria-hidden=\"true\"></i>";
-                        echo twig_get_attribute($this->env, $this->source, $context["subforum"], "SUBFORUM_NAME", [], "any", false, false, false, 60);
-                        echo "</a>";
-                        if ( !twig_get_attribute($this->env, $this->source, $context["subforum"], "S_LAST_ROW", [], "any", false, false, false, 60)) {
-                            echo $this->extensions['phpbb\template\twig\extension']->lang("COMMA_SEPARATOR");
-                        }
-                        // line 61
-                        echo "\t\t\t\t\t\t\t";
-                    }
-                    $_parent = $context['_parent'];
-                    unset($context['_seq'], $context['_iterated'], $context['_key'], $context['subforum'], $context['_parent'], $context['loop']);
-                    $context = array_intersect_key($context, $_parent) + $_parent;
-                    // line 62
-                    echo "\t\t\t\t\t\t\t";
-                    // line 63
-                    echo "\t\t\t\t\t\t";
-                }
-                // line 64
-                echo "
-\t\t\t\t\t\t";
-                // line 65
-                if ( !($context["S_IS_BOT"] ?? null)) {
-                    // line 66
-                    echo "\t\t\t\t\t\t<div class=\"responsive-show\" style=\"display: none;\">
-\t\t\t\t\t\t\t";
-                    // line 67
-                    if (twig_get_attribute($this->env, $this->source, $context["forumrow"], "CLICKS", [], "any", false, false, false, 67)) {
-                        // line 68
-                        echo "\t\t\t\t\t\t\t\t";
-                        echo $this->extensions['phpbb\template\twig\extension']->lang("REDIRECTS");
-                        echo $this->extensions['phpbb\template\twig\extension']->lang("COLON");
-                        echo " <strong>";
-                        echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "CLICKS", [], "any", false, false, false, 68);
-                        echo "</strong>
-\t\t\t\t\t\t\t";
-                    } elseif (( !twig_get_attribute($this->env, $this->source,                     // line 69
-$context["forumrow"], "S_IS_LINK", [], "any", false, false, false, 69) && twig_get_attribute($this->env, $this->source, $context["forumrow"], "TOPICS", [], "any", false, false, false, 69))) {
-                        // line 70
-                        echo "\t\t\t\t\t\t\t\t";
-                        echo $this->extensions['phpbb\template\twig\extension']->lang("TOPICS");
-                        echo $this->extensions['phpbb\template\twig\extension']->lang("COLON");
-                        echo " <strong>";
-                        echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "TOPICS", [], "any", false, false, false, 70);
-                        echo "</strong>
-\t\t\t\t\t\t\t";
-                    }
-                    // line 72
-                    echo "\t\t\t\t\t\t</div>
-\t\t\t\t\t\t";
-                }
-                // line 74
-                echo "\t\t\t\t\t</div>
-\t\t\t\t</dt>
+                // line 34
+                echo "\t\t\t\t\t\t<div>
+\t\t\t\t\t\t\t<span  class=\"title-title\">";
+                // line 35
+                echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "FORUM_NAME", [], "any", false, false, false, 35);
+                echo "</span>
+\t\t\t\t\t\t\t<span class=\"title-description\">";
+                // line 36
+                echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "FORUM_DESC", [], "any", false, false, false, 36);
+                echo "</span>
+\t\t\t\t\t\t</div>
+\t\t\t\t</div>
 \t\t\t\t";
-                // line 76
-                if (twig_get_attribute($this->env, $this->source, $context["forumrow"], "CLICKS", [], "any", false, false, false, 76)) {
-                    // line 77
-                    echo "\t\t\t\t\t<dd class=\"redirect\"><span>";
+                // line 39
+                if (twig_get_attribute($this->env, $this->source, $context["forumrow"], "CLICKS", [], "any", false, false, false, 39)) {
+                    // line 40
+                    echo "\t\t\t\t\t<div class=\"redirect\"><span>";
                     echo $this->extensions['phpbb\template\twig\extension']->lang("REDIRECTS");
                     echo $this->extensions['phpbb\template\twig\extension']->lang("COLON");
                     echo " ";
-                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "CLICKS", [], "any", false, false, false, 77);
-                    echo "</span></dd>
+                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "CLICKS", [], "any", false, false, false, 40);
+                    echo "</span></div>
 \t\t\t\t";
-                } elseif ( !twig_get_attribute($this->env, $this->source,                 // line 78
-$context["forumrow"], "S_IS_LINK", [], "any", false, false, false, 78)) {
-                    // line 79
-                    echo "\t\t\t\t\t<dd class=\"topics\">";
-                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "TOPICS", [], "any", false, false, false, 79);
+                } elseif ( !twig_get_attribute($this->env, $this->source,                 // line 41
+$context["forumrow"], "S_IS_LINK", [], "any", false, false, false, 41)) {
+                    // line 42
+                    echo "\t\t\t\t <div class=\"row_2\">
+\t\t\t\t\t<div class=\"topics\">";
+                    // line 43
+                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "TOPICS", [], "any", false, false, false, 43);
                     echo " <dfn>";
                     echo $this->extensions['phpbb\template\twig\extension']->lang("TOPICS");
-                    echo "</dfn></dd>
-\t\t\t\t\t<dd class=\"posts\">";
-                    // line 80
-                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "POSTS", [], "any", false, false, false, 80);
+                    echo "</dfn></div>
+\t\t\t\t\t<div class=\"posts\">";
+                    // line 44
+                    echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "POSTS", [], "any", false, false, false, 44);
                     echo " <dfn>";
                     echo $this->extensions['phpbb\template\twig\extension']->lang("POSTS");
-                    echo "</dfn></dd>
-\t\t\t\t\t<dd class=\"lastpost\">
-\t\t\t\t\t\t<span>
+                    echo "</dfn></div>
+\t\t\t\t\t<div class=\"lastpost\">
 \t\t\t\t\t\t\t";
-                    // line 83
-                    if (twig_get_attribute($this->env, $this->source, $context["forumrow"], "U_UNAPPROVED_TOPICS", [], "any", false, false, false, 83)) {
-                        // line 84
-                        echo "\t\t\t\t\t\t\t\t<a href=\"";
-                        echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "U_UNAPPROVED_TOPICS", [], "any", false, false, false, 84);
-                        echo "\" title=\"";
-                        echo $this->extensions['phpbb\template\twig\extension']->lang("TOPICS_UNAPPROVED");
-                        echo "\">
-\t\t\t\t\t\t\t\t\t<i class=\"icon fa-question fa-fw icon-blue\" aria-hidden=\"true\"></i><span class=\"sr-only\">";
-                        // line 85
-                        echo $this->extensions['phpbb\template\twig\extension']->lang("TOPICS_UNAPPROVED");
-                        echo "</span>
-\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t";
-                    } elseif (twig_get_attribute($this->env, $this->source,                     // line 87
-$context["forumrow"], "U_UNAPPROVED_POSTS", [], "any", false, false, false, 87)) {
-                        // line 88
-                        echo "\t\t\t\t\t\t\t\t<a href=\"";
-                        echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "U_UNAPPROVED_POSTS", [], "any", false, false, false, 88);
-                        echo "\" title=\"";
-                        echo $this->extensions['phpbb\template\twig\extension']->lang("POSTS_UNAPPROVED_FORUM");
-                        echo "\">
-\t\t\t\t\t\t\t\t\t<i class=\"icon fa-question fa-fw icon-blue\" aria-hidden=\"true\"></i><span class=\"sr-only\">";
-                        // line 89
-                        echo $this->extensions['phpbb\template\twig\extension']->lang("POSTS_UNAPPROVED_FORUM");
-                        echo "</span>
-\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t";
-                    }
-                    // line 92
-                    echo "\t\t\t\t\t\t\t";
-                    if (twig_get_attribute($this->env, $this->source, $context["forumrow"], "LAST_POST_TIME", [], "any", false, false, false, 92)) {
-                        // line 93
-                        echo "\t\t\t\t\t\t\t\t<dfn>";
-                        echo $this->extensions['phpbb\template\twig\extension']->lang("LAST_POST");
-                        echo "</dfn>
-\t\t\t\t\t\t\t\t";
-                        // line 94
-                        if (twig_get_attribute($this->env, $this->source, $context["forumrow"], "S_DISPLAY_SUBJECT", [], "any", false, false, false, 94)) {
-                            // line 95
-                            echo "\t\t\t\t\t\t\t\t\t";
-                            // line 96
-                            echo "\t\t\t\t\t\t\t\t\t<a href=\"";
-                            echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "U_LAST_POST", [], "any", false, false, false, 96);
-                            echo "\" title=\"";
-                            echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "LAST_POST_SUBJECT", [], "any", false, false, false, 96);
-                            echo "\" class=\"lastsubject\">";
-                            echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "LAST_POST_SUBJECT_TRUNCATED", [], "any", false, false, false, 96);
-                            echo "</a> <br />
-\t\t\t\t\t\t\t\t";
-                        }
-                        // line 98
-                        echo "\t\t\t\t\t\t\t\t\t";
-                        echo $this->extensions['phpbb\template\twig\extension']->lang("POST_BY_AUTHOR");
-                        echo " ";
-                        echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "LAST_POSTER_FULL", [], "any", false, false, false, 98);
-                        // line 99
-                        echo "\t\t\t\t\t\t\t\t";
-                        if ( !($context["S_IS_BOT"] ?? null)) {
-                            // line 100
-                            echo "\t\t\t\t\t\t\t\t\t<a href=\"";
-                            echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "U_LAST_POST", [], "any", false, false, false, 100);
-                            echo "\" title=\"";
-                            echo $this->extensions['phpbb\template\twig\extension']->lang("VIEW_LATEST_POST");
-                            echo "\">
-\t\t\t\t\t\t\t\t\t\t<i class=\"icon fa-external-link-square fa-fw icon-lightgray icon-md\" aria-hidden=\"true\"></i><span class=\"sr-only\">";
-                            // line 101
-                            echo $this->extensions['phpbb\template\twig\extension']->lang("VIEW_LATEST_POST");
-                            echo "</span>
-\t\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t\t";
-                        }
-                        // line 104
-                        echo "\t\t\t\t\t\t\t\t<br /><time datetime=\"";
-                        echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "LAST_POST_TIME_RFC3339", [], "any", false, false, false, 104);
+                    // line 46
+                    if (twig_get_attribute($this->env, $this->source, $context["forumrow"], "LAST_POST_TIME", [], "any", false, false, false, 46)) {
+                        // line 47
+                        echo "\t\t\t\t\t\t<time datetime=\"";
+                        echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "LAST_POST_TIME_RFC3339", [], "any", false, false, false, 47);
                         echo "\">";
-                        echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "LAST_POST_TIME", [], "any", false, false, false, 104);
+                        echo twig_slice($this->env, twig_get_attribute($this->env, $this->source, $context["forumrow"], "LAST_POST_TIME", [], "any", false, false, false, 47), 0, 16);
                         echo "</time>
+\t\t\t\t\t\t<dfn title=\"";
+                        // line 48
+                        echo $this->extensions['phpbb\template\twig\extension']->lang("LAST_POST");
+                        echo "\">
 \t\t\t\t\t\t\t";
-                    } else {
-                        // line 106
-                        echo "\t\t\t\t\t\t\t";
-                        if (twig_get_attribute($this->env, $this->source, $context["forumrow"], "U_UNAPPROVED_TOPICS", [], "any", false, false, false, 106)) {
-                            // line 107
+                        // line 49
+                        if ((twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, $context["forumrow"], "LAST_POST_SUBJECT_TRUNCATED", [], "any", false, false, false, 49)) > 16)) {
+                            // line 50
                             echo "\t\t\t\t\t\t\t\t";
-                            echo $this->extensions['phpbb\template\twig\extension']->lang("TOPIC_UNAPPROVED_FORUM", twig_get_attribute($this->env, $this->source, $context["forumrow"], "TOPICS", [], "any", false, false, false, 107));
-                            echo "
+                            echo twig_slice($this->env, twig_get_attribute($this->env, $this->source, $context["forumrow"], "LAST_POST_SUBJECT_TRUNCATED", [], "any", false, false, false, 50), 0, 16);
+                            echo "...
 \t\t\t\t\t\t\t";
                         } else {
-                            // line 109
+                            // line 52
                             echo "\t\t\t\t\t\t\t\t";
-                            echo $this->extensions['phpbb\template\twig\extension']->lang("NO_POSTS");
+                            echo twig_get_attribute($this->env, $this->source, $context["forumrow"], "LAST_POST_SUBJECT_TRUNCATED", [], "any", false, false, false, 52);
                             echo "
 \t\t\t\t\t\t\t";
                         }
-                        // line 111
-                        echo "\t\t\t\t\t\t\t";
+                        // line 54
+                        echo "\t\t\t\t\t\t</dfn>
+\t\t\t\t\t\t";
+                    } else {
+                        // line 56
+                        echo "\t\t\t\t\t\t";
+                        if (twig_get_attribute($this->env, $this->source, $context["forumrow"], "U_UNAPPROVED_TOPICS", [], "any", false, false, false, 56)) {
+                            // line 57
+                            echo "\t\t\t\t\t\t\t";
+                            echo $this->extensions['phpbb\template\twig\extension']->lang("TOPIC_UNAPPROVED_FORUM", twig_get_attribute($this->env, $this->source, $context["forumrow"], "TOPICS", [], "any", false, false, false, 57));
+                            echo "
+\t\t\t\t\t\t";
+                        } else {
+                            // line 59
+                            echo "\t\t\t\t\t\t\t";
+                            echo $this->extensions['phpbb\template\twig\extension']->lang("NO_POSTS");
+                            echo "
+\t\t\t\t\t\t";
+                        }
+                        // line 61
+                        echo "\t\t\t\t\t\t";
                     }
-                    // line 112
-                    echo "\t\t\t\t\t\t</span>
-\t\t\t\t\t</dd>
-\t\t\t\t";
-                } else {
-                    // line 115
-                    echo "\t\t\t\t\t<dd>&nbsp;</dd>
+                    // line 62
+                    echo "\t\t\t\t\t</div>
 \t\t\t\t";
                 }
-                // line 117
-                echo "\t\t\t</dl>
+                // line 64
+                echo "\t\t\t\t</div>
+\t\t\t\t</a>
+\t\t\t</div>
 \t\t\t";
-                // line 118
-                // line 119
+                // line 67
+                // line 68
                 echo "\t\t</li>
 \t\t";
-                // line 120
-                // line 121
+                // line 69
+                // line 70
                 echo "\t";
             }
-            // line 122
+            // line 71
             echo "
 \t";
-            // line 123
-            if (twig_get_attribute($this->env, $this->source, $context["forumrow"], "S_LAST_ROW", [], "any", false, false, false, 123)) {
-                // line 124
+            // line 72
+            if (twig_get_attribute($this->env, $this->source, $context["forumrow"], "S_LAST_ROW", [], "any", false, false, false, 72)) {
+                // line 73
                 echo "\t\t\t</ul>
 
 \t\t\t</div>
 \t\t</div>
 \t";
-                // line 128
-                // line 129
+                // line 77
+                // line 78
                 echo "\t";
             }
-            // line 130
+            // line 79
             echo "
 ";
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 132
+            // line 81
             echo "\t<div class=\"panel\">
 \t\t<div class=\"inner\">
 \t\t<strong>";
-            // line 134
+            // line 83
             echo $this->extensions['phpbb\template\twig\extension']->lang("NO_FORUMS");
             echo "</strong>
 \t\t</div>
@@ -486,7 +270,7 @@ $context["forumrow"], "U_UNAPPROVED_POSTS", [], "any", false, false, false, 87))
 
     public function getDebugInfo()
     {
-        return array (  466 => 134,  462 => 132,  456 => 130,  453 => 129,  452 => 128,  446 => 124,  444 => 123,  441 => 122,  438 => 121,  437 => 120,  434 => 119,  433 => 118,  430 => 117,  426 => 115,  421 => 112,  418 => 111,  412 => 109,  406 => 107,  403 => 106,  395 => 104,  389 => 101,  382 => 100,  379 => 99,  374 => 98,  364 => 96,  362 => 95,  360 => 94,  355 => 93,  352 => 92,  346 => 89,  339 => 88,  337 => 87,  332 => 85,  325 => 84,  323 => 83,  315 => 80,  308 => 79,  306 => 78,  298 => 77,  296 => 76,  292 => 74,  288 => 72,  279 => 70,  277 => 69,  269 => 68,  267 => 67,  264 => 66,  262 => 65,  259 => 64,  256 => 63,  254 => 62,  248 => 61,  230 => 60,  212 => 59,  208 => 58,  202 => 57,  200 => 56,  197 => 55,  188 => 53,  185 => 52,  180 => 51,  173 => 50,  170 => 49,  169 => 48,  164 => 47,  162 => 46,  159 => 45,  150 => 41,  140 => 40,  137 => 39,  135 => 38,  132 => 37,  126 => 36,  122 => 35,  117 => 34,  116 => 33,  113 => 32,  111 => 31,  109 => 30,  106 => 29,  104 => 28,  98 => 24,  97 => 23,  92 => 21,  88 => 20,  84 => 19,  72 => 18,  69 => 17,  68 => 16,  62 => 12,  59 => 11,  58 => 10,  55 => 9,  48 => 4,  45 => 3,  40 => 2,  37 => 1,);
+        return array (  250 => 83,  246 => 81,  240 => 79,  237 => 78,  236 => 77,  230 => 73,  228 => 72,  225 => 71,  222 => 70,  221 => 69,  218 => 68,  217 => 67,  212 => 64,  208 => 62,  205 => 61,  199 => 59,  193 => 57,  190 => 56,  186 => 54,  180 => 52,  174 => 50,  172 => 49,  168 => 48,  161 => 47,  159 => 46,  152 => 44,  146 => 43,  143 => 42,  141 => 41,  133 => 40,  131 => 39,  125 => 36,  121 => 35,  118 => 34,  115 => 33,  114 => 32,  109 => 31,  107 => 30,  105 => 29,  101 => 28,  97 => 27,  94 => 26,  93 => 25,  90 => 24,  88 => 23,  86 => 22,  83 => 21,  81 => 20,  75 => 16,  68 => 14,  65 => 13,  62 => 12,  59 => 11,  58 => 10,  55 => 9,  48 => 4,  45 => 3,  40 => 2,  37 => 1,);
     }
 
     public function getSourceContext()

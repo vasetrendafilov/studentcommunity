@@ -288,19 +288,25 @@ class __TwigTemplate_b261389bab9e98d5c26c9c73a4a0e13cbb1005fe69b72c33ae346131374
 ";
         // line 77
         // line 78
-        echo "
+        echo "<script type=\"text/javascript\">
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+if (currentTheme) {
+\tdocument.documentElement.setAttribute('data-theme', currentTheme);
+}
+</script>
 <div id=\"wrap\" class=\"wrap\">
 \t<a id=\"top\" class=\"top-anchor\" accesskey=\"t\"></a>
+
 \t<div id=\"page-header\">
 \t\t<div class=\"headerbar\" role=\"banner\">
 \t\t";
-        // line 83
-        // line 84
+        // line 89
+        // line 90
         echo "\t\t\t<div class=\"inner\">
 
 \t\t\t<div id=\"site-description\" class=\"site-description\">
 \t\t<a id=\"logo\" class=\"logo\" href=\"";
-        // line 87
+        // line 93
         if (($context["U_SITE_HOME"] ?? null)) {
             echo ($context["U_SITE_HOME"] ?? null);
         } else {
@@ -316,33 +322,33 @@ class __TwigTemplate_b261389bab9e98d5c26c9c73a4a0e13cbb1005fe69b72c33ae346131374
 \t\t\t\t\t<span class=\"site_logo\"></span>
 \t\t\t\t</a>
 \t\t\t\t<h1>";
-        // line 90
+        // line 96
         echo ($context["SITENAME"] ?? null);
         echo "</h1>
 \t\t\t\t<p>";
-        // line 91
+        // line 97
         echo ($context["SITE_DESCRIPTION"] ?? null);
         echo "</p>
 \t\t\t\t<p class=\"skiplink\"><a href=\"#start_here\">";
-        // line 92
+        // line 98
         echo $this->extensions['phpbb\template\twig\extension']->lang("SKIP");
         echo "</a></p>
 \t\t\t</div>
 
 \t\t\t";
-        // line 95
-        // line 96
+        // line 101
+        // line 102
         echo "\t\t\t";
         if ((($context["S_DISPLAY_SEARCH"] ?? null) &&  !($context["S_IN_SEARCH"] ?? null))) {
-            // line 97
+            // line 103
             echo "\t\t\t<div id=\"search-box\" class=\"search-box search-header\" role=\"search\">
 \t\t\t\t<form action=\"";
-            // line 98
+            // line 104
             echo ($context["U_SEARCH"] ?? null);
             echo "\" method=\"get\" id=\"search\">
 \t\t\t\t<fieldset>
 \t\t\t\t\t<input name=\"keywords\" id=\"keywords\" type=\"search\" maxlength=\"128\" title=\"";
-            // line 100
+            // line 106
             echo $this->extensions['phpbb\template\twig\extension']->lang("SEARCH_KEYWORDS");
             echo "\" class=\"inputbox search tiny\" size=\"20\" value=\"";
             echo ($context["SEARCH_WORDS"] ?? null);
@@ -350,27 +356,27 @@ class __TwigTemplate_b261389bab9e98d5c26c9c73a4a0e13cbb1005fe69b72c33ae346131374
             echo $this->extensions['phpbb\template\twig\extension']->lang("SEARCH_MINI");
             echo "\" />
 \t\t\t\t\t<button class=\"button button-search\" type=\"submit\" title=\"";
-            // line 101
+            // line 107
             echo $this->extensions['phpbb\template\twig\extension']->lang("SEARCH");
             echo "\">
 \t\t\t\t\t\t<i class=\"icon fa-search fa-fw\" aria-hidden=\"true\"></i><span class=\"sr-only\">";
-            // line 102
+            // line 108
             echo $this->extensions['phpbb\template\twig\extension']->lang("SEARCH");
             echo "</span>
 \t\t\t\t\t</button>
 \t\t\t\t\t<a href=\"";
-            // line 104
+            // line 110
             echo ($context["U_SEARCH"] ?? null);
             echo "\" class=\"button button-search-end\" title=\"";
             echo $this->extensions['phpbb\template\twig\extension']->lang("SEARCH_ADV");
             echo "\">
 \t\t\t\t\t\t<i class=\"icon fa-cog fa-fw\" aria-hidden=\"true\"></i><span class=\"sr-only\">";
-            // line 105
+            // line 111
             echo $this->extensions['phpbb\template\twig\extension']->lang("SEARCH_ADV");
             echo "</span>
 \t\t\t\t\t</a>
 \t\t\t\t\t";
-            // line 107
+            // line 113
             echo ($context["S_SEARCH_HIDDEN_FIELDS"] ?? null);
             echo "
 \t\t\t\t</fieldset>
@@ -378,18 +384,18 @@ class __TwigTemplate_b261389bab9e98d5c26c9c73a4a0e13cbb1005fe69b72c33ae346131374
 \t\t\t</div>
 \t\t\t";
         }
-        // line 112
+        // line 118
         echo "\t\t\t";
-        // line 113
+        // line 119
         echo "
 \t\t\t</div>
 \t\t\t";
-        // line 115
-        // line 116
+        // line 121
+        // line 122
         echo "\t\t</div>
 \t\t";
-        // line 117
-        // line 118
+        // line 123
+        // line 124
         echo "\t\t";
         $location = "navbar_header.html";
         $namespace = false;
@@ -398,27 +404,27 @@ class __TwigTemplate_b261389bab9e98d5c26c9c73a4a0e13cbb1005fe69b72c33ae346131374
             $previous_look_up_order = $this->env->getNamespaceLookUpOrder();
             $this->env->setNamespaceLookUpOrder(array($namespace, '__main__'));
         }
-        $this->loadTemplate("navbar_header.html", "overall_header.html", 118)->display($context);
+        $this->loadTemplate("navbar_header.html", "overall_header.html", 124)->display($context);
         if ($namespace) {
             $this->env->setNamespaceLookUpOrder($previous_look_up_order);
         }
-        // line 119
+        // line 125
         echo "\t</div>
 
 \t";
-        // line 121
-        // line 122
+        // line 127
+        // line 128
         echo "
 \t<a id=\"start_here\" class=\"anchor\"></a>
 \t<div id=\"page-body\" class=\"page-body\" role=\"main\">
 \t\t";
-        // line 125
+        // line 131
         if (((($context["S_BOARD_DISABLED"] ?? null) && ($context["S_USER_LOGGED_IN"] ?? null)) && (($context["U_MCP"] ?? null) || ($context["U_ACP"] ?? null)))) {
-            // line 126
+            // line 132
             echo "\t\t<div id=\"information\" class=\"rules\">
 \t\t\t<div class=\"inner\">
 \t\t\t\t<strong>";
-            // line 128
+            // line 134
             echo $this->extensions['phpbb\template\twig\extension']->lang("INFORMATION");
             echo $this->extensions['phpbb\template\twig\extension']->lang("COLON");
             echo "</strong> ";
@@ -428,10 +434,10 @@ class __TwigTemplate_b261389bab9e98d5c26c9c73a4a0e13cbb1005fe69b72c33ae346131374
 \t\t</div>
 \t\t";
         }
-        // line 132
+        // line 138
         echo "
 \t\t";
-        // line 133
+        // line 139
     }
 
     public function getTemplateName()
@@ -446,7 +452,7 @@ class __TwigTemplate_b261389bab9e98d5c26c9c73a4a0e13cbb1005fe69b72c33ae346131374
 
     public function getDebugInfo()
     {
-        return array (  435 => 133,  432 => 132,  422 => 128,  418 => 126,  416 => 125,  411 => 122,  410 => 121,  406 => 119,  393 => 118,  392 => 117,  389 => 116,  388 => 115,  384 => 113,  382 => 112,  374 => 107,  369 => 105,  363 => 104,  358 => 102,  354 => 101,  346 => 100,  341 => 98,  338 => 97,  335 => 96,  334 => 95,  328 => 92,  324 => 91,  320 => 90,  304 => 87,  299 => 84,  298 => 83,  291 => 78,  290 => 77,  281 => 75,  277 => 73,  276 => 72,  271 => 70,  268 => 69,  267 => 68,  259 => 65,  255 => 63,  247 => 61,  245 => 60,  242 => 59,  234 => 57,  232 => 56,  229 => 55,  221 => 53,  219 => 52,  214 => 50,  210 => 49,  205 => 48,  188 => 33,  186 => 32,  176 => 24,  170 => 22,  168 => 21,  165 => 20,  162 => 18,  149 => 17,  136 => 16,  125 => 15,  114 => 14,  103 => 13,  92 => 12,  81 => 11,  79 => 10,  54 => 8,  50 => 7,  40 => 2,  37 => 1,);
+        return array (  441 => 139,  438 => 138,  428 => 134,  424 => 132,  422 => 131,  417 => 128,  416 => 127,  412 => 125,  399 => 124,  398 => 123,  395 => 122,  394 => 121,  390 => 119,  388 => 118,  380 => 113,  375 => 111,  369 => 110,  364 => 108,  360 => 107,  352 => 106,  347 => 104,  344 => 103,  341 => 102,  340 => 101,  334 => 98,  330 => 97,  326 => 96,  310 => 93,  305 => 90,  304 => 89,  291 => 78,  290 => 77,  281 => 75,  277 => 73,  276 => 72,  271 => 70,  268 => 69,  267 => 68,  259 => 65,  255 => 63,  247 => 61,  245 => 60,  242 => 59,  234 => 57,  232 => 56,  229 => 55,  221 => 53,  219 => 52,  214 => 50,  210 => 49,  205 => 48,  188 => 33,  186 => 32,  176 => 24,  170 => 22,  168 => 21,  165 => 20,  162 => 18,  149 => 17,  136 => 16,  125 => 15,  114 => 14,  103 => 13,  92 => 12,  81 => 11,  79 => 10,  54 => 8,  50 => 7,  40 => 2,  37 => 1,);
     }
 
     public function getSourceContext()

@@ -129,15 +129,7 @@
 	html {
 		height: auto;
 	}
-
-	body {
-		padding: 0;
-	}
-
 	.wrap {
-		border: none;
-		border-radius: 0;
-		margin: 0;
 		min-width: 290px;
 		padding: 0 5px;
 	}
@@ -341,6 +333,7 @@
 	fieldset dt, fieldset.fields1 dt, fieldset.fields2 dt {
 		width: auto;
 		float: none;
+		margin-bottom: 3px;
 	}
 
 	fieldset dd, fieldset.fields1 dd, fieldset.fields2 dd {
@@ -391,29 +384,6 @@
 
 	.horizontal-palette td:nth-child(2n), .vertical-palette tr:nth-child(2n) {
 		display: none;
-	}
-
-	fieldset.quick-login label {
-		display: block;
-		margin-bottom: 5px;
-		white-space: normal;
-	}
-
-	fieldset.quick-login label > span {
-		display: inline-block;
-		min-width: 100px;
-	}
-
-	fieldset.quick-login input.inputbox {
-		width: 85%;
-		max-width: 300px;
-		margin-left: 20px;
-	}
-
-	fieldset.quick-login label[for="autologin"] {
-		display: inline-block;
-		text-align: right;
-		min-width: 50%;
 	}
 
 	/* User profile

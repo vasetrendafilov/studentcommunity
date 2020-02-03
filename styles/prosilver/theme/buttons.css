@@ -6,7 +6,7 @@
 	padding: 2px 8px;
 	font-size: 13px;
 	font-weight: 600;
-	font-family: "Open Sans", "Droid Sans", Verdana, Arial, Helvetica;
+	font-family:  'Rubik', sans-serif;
 	line-height: 1.4;
 	text-align: center;
 	white-space: nowrap;
@@ -20,6 +20,7 @@
 	        user-select: none;
 	border: 1px solid transparent;
 	border-radius: 4px;
+	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .button:focus,
@@ -29,7 +30,6 @@
 }
 
 .caret {
-	border-left: 1px solid;
 	position: relative;
 	right: -6px;
 }

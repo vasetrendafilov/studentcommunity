@@ -15,6 +15,7 @@
 }*/
 
 /* Define your base font-size here; most elements will inherit this. _NO__DOTCOMMA__AFTER__*/
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap&subset=cyrillic');
 html {
 	font-size: 1em; /* Assuming 16px... */
 	line-height: 1.5; /* 24px (This is now our magic number; all subsequent margin-bottoms and line-heights want to be a multiple of this number in order to maintain vertical rhythm.) _NO__DOTCOMMA__AFTER__*/
@@ -22,9 +23,9 @@ html {
 }
 
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Rubik', sans-serif;
 	color: #333333;
-	background-color: #ffffff;
+	background-color: #26262b;
 }
 
 input,
@@ -112,4 +113,3 @@ ul {
 abbr[title] {
 	text-decoration: none;
 }
-

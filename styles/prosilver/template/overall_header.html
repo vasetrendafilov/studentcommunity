@@ -75,9 +75,15 @@
 <body id="phpbb" class="nojs notouch section-{SCRIPT_NAME} {S_CONTENT_DIRECTION} {BODY_CLASS}">
 
 <!-- EVENT overall_header_body_before -->
-
+<script type="text/javascript">
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+if (currentTheme) {
+	document.documentElement.setAttribute('data-theme', currentTheme);
+}
+</script>
 <div id="wrap" class="wrap">
 	<a id="top" class="top-anchor" accesskey="t"></a>
+
 	<div id="page-header">
 		<div class="headerbar" role="banner">
 		<!-- EVENT overall_header_headerbar_before -->

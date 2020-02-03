@@ -5,8 +5,8 @@
 ----------------------------------------*/
 fieldset {
 	border-width: 0;
-	font-family: Verdana, Helvetica, Arial, sans-serif;
-	font-size: 1.1em;
+	font-family:  'Rubik', sans-serif;
+	font-size: 1.3em;
 }
 
 input {
@@ -14,16 +14,28 @@ input {
 	vertical-align: middle;
 	padding: 0 3px;
 	font-size: 1em;
-	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-family:  'Rubik', sans-serif;
 }
-
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--light-grey);
+  -webkit-box-shadow: 0 0 0px 1000px var(--dark-06dp) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
 select {
-	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-family:  'Rubik', sans-serif;
 	font-weight: normal;
 	cursor: pointer;
 	vertical-align: middle;
 	border: 1px solid transparent;
-	padding: 1px;
+	padding: 4px;
 	font-size: 1em;
 }
 
@@ -37,11 +49,11 @@ option {
 
 select optgroup option {
 	padding-right: 1em;
-	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-family:  'Rubik', sans-serif;
 }
 
 textarea {
-	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	font-family:  'Rubik', sans-serif;
 	width: 60%;
 	padding: 2px;
 	font-size: 1em;
@@ -148,26 +160,6 @@ button::-moz-focus-inner {
 	border: 0
 }
 
-/* Quick-login on index page */
-fieldset.quick-login {
-	margin-top: 5px;
-}
-
-fieldset.quick-login input {
-	width: auto;
-}
-
-fieldset.quick-login input.inputbox {
-	width: 15%;
-	vertical-align: middle;
-	margin-right: 5px;
-}
-
-fieldset.quick-login label {
-	white-space: nowrap;
-	padding-right: 2px;
-}
-
 /* Display options on viewtopic/viewforum pages  */
 fieldset.display-options {
 	text-align: center;
@@ -233,7 +225,7 @@ fieldset.forum-selection2 {
 fieldset.submit-buttons {
 	text-align: center;
 	vertical-align: middle;
-	margin: 5px 0;
+	margin: 10px 0 5px 0;
 }
 
 fieldset.submit-buttons input {
@@ -258,7 +250,7 @@ fieldset.submit-buttons input {
 }
 
 .message-box textarea {
-	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-family:  'Rubik', sans-serif;
 	width: 450px;
 	height: 270px;
 	min-width: 100%;
@@ -287,12 +279,13 @@ fieldset.submit-buttons input {
 /* Input field styles
 ---------------------------------------- */
 .inputbox {
-	border: 1px solid transparent;
-	padding: 2px;
+	padding: 6px;
+	border: none;
+	border-radius: 4px;
+	outline: none;
 }
 
 .inputbox:hover, .inputbox:focus {
-	border: 1px solid transparent;
 	outline-style: none;
 }
 
@@ -304,7 +297,9 @@ input.tiny	{ width: 150px; }
 textarea.inputbox {
 	width: 85%;
 }
-
+#password{
+	margin-bottom: 8px;
+}
 .autowidth {
 	width: auto !important;
 }
@@ -334,11 +329,9 @@ input.button1, input.button2 {
 
 a.button1, input.button1, input.button3, a.button2, input.button2 {
 	width: auto !important;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
-	background: transparent none repeat-x top left;
-	line-height: 1.5;
+	padding: 5px;
+	font-family:  'Rubik', sans-serif;
+	border-radius: 5px;
 }
 
 a.button1, input.button1 {
@@ -362,12 +355,16 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="che
 /* Alternative button */
 a.button2, input.button2, input.button3 {
 	border: 1px solid transparent;
+	font-size: 13px;
+	font-weight: 700;
 }
 
 /* <a> button in the style of the form buttons */
 a.button1, a.button2 {
 	text-decoration: none;
-	padding: 0 3px;
+	padding: 5px;
+	font-size: 13px;
+	font-weight: 700;
 	vertical-align: text-bottom;
 }
 

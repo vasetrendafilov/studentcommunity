@@ -21,17 +21,12 @@
 }
 
 .panel-container .panel p {
-	font-size: 1.1em;
+	font-size: 1.2em;
 }
 
 .panel-container .panel ol {
 	margin-left: 2em;
 	font-size: 1.1em;
-}
-
-.panel-container .panel li.row {
-	border-bottom: 1px solid transparent;
-	border-top: 1px solid transparent;
 }
 
 ul.cplist {
@@ -112,7 +107,7 @@ ul.cplist {
 .tabs .tab, .minitabs .tab {
 	display: block;
 	float: left;
-	font-size: 1em;
+	font-size: 1.2em;
 	font-weight: bold;
 	line-height: 1.4em;
 }
@@ -218,8 +213,8 @@ ul.cplist {
 ----------------------------------------*/
 /* Container for sub-navigation list */
 .navigation {
-	width: 100%;
-	padding-top: 36px;
+	width: 96%;
+	padding-top: 45px;
 }
 
 .navigation ul {
@@ -256,11 +251,12 @@ ul.cplist {
 
 /* Friends list */
 .cp-mini {
-	margin: 10px 15px 10px 5px;
+	margin: 15px 10px;
 	max-height: 200px;
 	overflow-y: auto;
 	padding: 5px 10px;
 	border-radius: 7px;
+	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 dl.mini dt {
@@ -336,6 +332,15 @@ ol.def-rules li {
 	text-align: center;
 }
 
+	.navigation li:first-child a {
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+	.navigation li:last-child a {
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+
 /* Responsive *CP navigation
 ----------------------------------------*/
 @media only screen and (max-width: 900px), only screen and (max-device-width: 900px)
@@ -350,7 +355,6 @@ ol.def-rules li {
 	.cp-menu, .navigation, .cp-main {
 		float: none;
 		width: auto;
-		margin: 0;
 	}
 
 	.navigation {
@@ -363,13 +367,5 @@ ol.def-rules li {
 		background-image: none;
 	}
 
-	.navigation li:first-child a {
-		border-top-left-radius: 5px;
-		border-top-right-radius: 5px;
-	}
 
-	.navigation li:last-child a {
-		border-bottom-left-radius: 5px;
-		border-bottom-right-radius: 5px;
-	}
 }
