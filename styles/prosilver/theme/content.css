@@ -13,14 +13,14 @@ color: var(--light-grey);
 font-weight: 600;
 font-size: 28px;
 }
-ul.topiclist li {
+ul.topiclist-new li {
 	float: left;
   display: block;
   width: 33.3333333%;
   border: none;
   padding: 0;
 }
-ul.topiclist li .row-item {
+ul.topiclist-new li .row-item {
 	  margin:5px;
     position: relative;
 
@@ -28,7 +28,7 @@ ul.topiclist li .row-item {
 		transition: transform .1s;
     background-color: var(--dark);
 }
-ul.topiclist li .row-item a.forumtitle{
+ul.topiclist-new li .row-item a.forumtitle{
 	  width: 100%;
     padding: 30px;
     box-sizing: border-box;
@@ -37,11 +37,11 @@ ul.topiclist li .row-item a.forumtitle{
 .topics li .row-item a.forumtitle{
 	min-height: 140px!important;
 }
-ul.topiclist li .row-item a.forumtitle:hover{
+ul.topiclist-new li .row-item a.forumtitle:hover{
 	text-decoration: none;
 	color: var(--blue);
 }
-ul.topiclist li .row-item:hover {
+ul.topiclist-new li .row-item:hover {
     transform: scale(1.04);
 	}
 .row_1 div{
@@ -86,14 +86,102 @@ dfn{
 	display: block;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-	ul.topiclist li.row {
+	ul.topiclist-new li.row {
     width: 50%;
 }
 }
 @media (max-width: 767px){
-	ul.topiclist li.row {
+	ul.topiclist-new li.row {
     width: 100%;
 }
+}
+/* Topics styles
+---------------------------------------- */
+ul.topiclist li {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+}
+
+ul.topics{
+  background-color: var(--dark-04dp);
+	border-radius: 7px;
+	padding-top: 5px;
+}
+
+ul.topiclist dl {
+	position: relative;
+}
+
+ul.topiclist li.row dl {
+	margin: 2px 0;
+}
+
+ul.topiclist dt, ul.topiclist dd {
+	display: block;
+	float: left;
+}
+
+ul.topiclist dt {
+	width: 100%;
+	margin-right: -440px;
+	font-size: 1.1em;
+}
+
+ul.topiclist.missing-column dt {
+	margin-right: -345px;
+}
+
+ul.topiclist.two-long-columns dt {
+	margin-right: -250px;
+}
+
+ul.topiclist.two-columns dt {
+	margin-right: -80px;
+}
+
+ul.topiclist dt .list-inner {
+	margin-right: 440px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+ul.topiclist.missing-column dt .list-inner {
+	margin-right: 345px;
+}
+
+ul.topiclist.two-long-columns dt .list-inner {
+	margin-right: 250px;
+}
+
+ul.topiclist.two-columns dt .list-inner {
+	margin-right: 80px;
+}
+
+ul.topiclist dd {
+	border-left: 1px solid transparent;
+	padding: 4px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul.topiclist li.row dd {
+	padding: 4px 0 999px 0;
+	margin-bottom: -995px;
+}
+
+ul.topiclist dfn {
+	/* Labels for post/view counts */
+	position: absolute;
+	left: -999px;
+	width: 990px;
+}
+
+dl.row-item {
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+    background-size: 32px;
 }
 
 li.header dt, li.header dd {
@@ -102,7 +190,7 @@ li.header dt, li.header dd {
 	margin: 2px 0 4px 0;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	font-size: 1em;
+	font-size: 1.3em;
 	font-family:  'Rubik', sans-serif;
 	text-transform: uppercase;
 }
@@ -134,6 +222,14 @@ li.header dl.row-item dt .list-inner {
 	padding-right: 50px;
 }
 
+dl.row-item dt .list-inner {
+	padding-left: 52px;					/* Space for folder icon */
+}
+dl.row-item dt, dl.row-item dd {
+    min-height: 35px;
+		background-position: 8px 0;
+    background-size: 29px;
+}
 /* Forum list column styles */
 
 dd.posts, dd.topics, dd.views, dd.extra, dd.mark {

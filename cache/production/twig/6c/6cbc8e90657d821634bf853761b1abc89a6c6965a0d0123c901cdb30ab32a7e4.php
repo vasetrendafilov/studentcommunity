@@ -74,7 +74,7 @@ class __TwigTemplate_cea8d65df7d96e635a69736afb7dee544faec71730a311b4a9d11404bed
                 // line 16
                 echo "\t\t<div class=\"forabg\">
 \t\t\t<div class=\"inner\">
-\t\t\t<ul class=\"topiclist forums\">
+\t\t\t<ul class=\"topiclist-new forums\">
 \t";
             }
             // line 20

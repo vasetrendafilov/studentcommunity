@@ -55,11 +55,11 @@ a:hover { color: var(--blue)!important; }
 
 /* Links on gradient backgrounds */
 .forumbg .header a, .forabg .header a, th a {
-	color: #FFFFFF;
+	color: var(--light-grey);
 }
 
 .forumbg .header a:hover, .forabg .header a:hover, th a:hover {
-	color: #A8D8FF;
+	color: var(--blue);
 }
 
 /* Notification mark read link */
@@ -125,15 +125,11 @@ a:hover { color: var(--blue)!important; }
 }
 
 .post:target .content {
-	color: #000000;
+	color: var(--light-grey);
 }
 
 .post:target h3 a {
-	color: #000000;
-}
-
-.bg1 {
-	background-color: var(--light-dark);
+	color: var(--light-grey);
 }
 
 table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
@@ -166,11 +162,7 @@ ul.navlinks {
 /* Table styles
 ----------------------------------------*/
 table.table1 thead th {
-	color: #FFFFFF;
-}
-
-table.table1 tbody tr {
-	border-color: #BFC1CF;
+	color: var(--light-grey);
 }
 
 table.table1 tbody tr:hover, table.table1 tbody tr.hover {
@@ -183,7 +175,7 @@ table.table1 td {
 }
 
 table.table1 tbody td {
-	border-top-color: #FAFAFA;
+	border-top-color: var(--light-grey);
 }
 
 table.table1 tbody th {
@@ -336,9 +328,11 @@ li.row:hover {
 }
 
 li.header dt, li.header dd {
-	color: #FFFFFF;
+	color: var(--ligth-grey);
 }
-
+.topic-title a{
+  color:var(--light-grey);
+}
 /* Post body styles
 ----------------------------------------*/
 .postbody {
@@ -725,12 +719,12 @@ ul.cplist {
 }
 
 .panel-container .panel li.header dd, .panel-container .panel li.header dt {
-	color: #000000;
+	color: var(--light-grey);
 }
 
 .panel-container table.table1 thead th {
-	color: #333333;
-	border-bottom-color: #333333;
+	color: var(--light-grey);
+	border-bottom-color: var(--light-grey);
 }
 
 .cp-main .pm-message {

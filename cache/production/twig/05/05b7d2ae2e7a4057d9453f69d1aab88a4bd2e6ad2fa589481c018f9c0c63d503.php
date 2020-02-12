@@ -455,7 +455,7 @@ class __TwigTemplate_3e896a2b8ebe52b1506b105543303fe6dc11656463751feb2109e22ef4f
             echo "\" title=\"";
             echo $this->extensions['phpbb\template\twig\extension']->lang("LOGIN_LOGOUT");
             echo "\" accesskey=\"x\" role=\"menuitem\">
-\t\t\t\t<i class=\"icon fa-power-off fa-fw\" aria-hidden=\"true\"></i><span>";
+\t\t\t\t<i class=\"icon fa-sign-in fa-fw\"></i><span>";
             // line 166
             echo $this->extensions['phpbb\template\twig\extension']->lang("LOGIN_LOGOUT");
             echo "</span>

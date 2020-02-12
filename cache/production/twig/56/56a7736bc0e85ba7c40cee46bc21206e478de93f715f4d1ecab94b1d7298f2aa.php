@@ -250,456 +250,472 @@ class __TwigTemplate_1d9c6cfeeb9154e81cde330f485b62daf812c413ab1144992f867db8ccd
                 echo "\t<div class=\"forumbg\">
 
 \t\t<div class=\"inner\">
+\t\t<ul class=\"topiclist\">
+\t\t\t<li class=\"header\">
+\t\t\t\t<dl class=\"row-item\">
+\t\t\t\t\t<dt><div class=\"list-inner\">";
+                // line 68
+                echo $this->extensions['phpbb\template\twig\extension']->lang("TOPICS");
+                echo "</div></dt>
+\t\t\t\t\t<dd class=\"posts\">";
+                // line 69
+                echo $this->extensions['phpbb\template\twig\extension']->lang("REPLIES");
+                echo "</dd>
+\t\t\t\t\t<dd class=\"views\">";
+                // line 70
+                echo $this->extensions['phpbb\template\twig\extension']->lang("VIEWS");
+                echo "</dd>
+\t\t\t\t\t<dd class=\"lastpost\"><span>";
+                // line 71
+                echo $this->extensions['phpbb\template\twig\extension']->lang("LAST_POST");
+                echo "</span></dd>
+\t\t\t\t</dl>
+\t\t\t</li>
+\t\t</ul>
 \t\t<ul class=\"topiclist topics\">
 
 \t\t";
-                // line 67
+                // line 77
                 $context['_parent'] = $context;
-                $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "searchresults", [], "any", false, false, false, 67));
+                $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "searchresults", [], "any", false, false, false, 77));
                 foreach ($context['_seq'] as $context["_key"] => $context["searchresults"]) {
-                    // line 68
+                    // line 78
                     echo "\t\t\t";
-                    // line 69
-                    echo "\t\t\t<li class=\"row";
-                    if ((twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_ROW_COUNT", [], "any", false, false, false, 69) % 2 == 0)) {
-                        echo " bg1";
-                    } else {
-                        echo " bg2";
-                    }
-                    echo "\">
-\t\t\t\t<dl class=\"row-item \">
+                    // line 79
+                    echo "\t\t\t<li class=\"row\">
+\t\t\t\t<dl class=\"row-item\">
 \t\t\t\t\t<dt";
-                    // line 71
-                    if (twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_ICON_IMG", [], "any", false, false, false, 71)) {
+                    // line 81
+                    if (twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_ICON_IMG", [], "any", false, false, false, 81)) {
                         echo " style=\"background-image: url(";
                         echo ($context["T_ICONS_PATH"] ?? null);
-                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_ICON_IMG", [], "any", false, false, false, 71);
+                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_ICON_IMG", [], "any", false, false, false, 81);
                         echo "); background-repeat: no-repeat;\"";
                     }
                     echo " title=\"";
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_FOLDER_IMG_ALT", [], "any", false, false, false, 71);
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_FOLDER_IMG_ALT", [], "any", false, false, false, 81);
                     echo "\">
 \t\t\t\t\t\t";
-                    // line 72
-                    if ((twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_UNREAD_TOPIC", [], "any", false, false, false, 72) &&  !($context["S_IS_BOT"] ?? null))) {
+                    // line 82
+                    if ((twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_UNREAD_TOPIC", [], "any", false, false, false, 82) &&  !($context["S_IS_BOT"] ?? null))) {
                         echo "<a href=\"";
-                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_NEWEST_POST", [], "any", false, false, false, 72);
+                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_NEWEST_POST", [], "any", false, false, false, 82);
                         echo "\" class=\"row-item-link\"></a>";
                     }
-                    // line 73
+                    // line 83
                     echo "\t\t\t\t\t\t<div class=\"list-inner\">
 \t\t\t\t\t\t\t";
-                    // line 74
-                    // line 75
+                    // line 84
+                    // line 85
                     echo "\t\t\t\t\t\t\t";
-                    if ((twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_UNREAD_TOPIC", [], "any", false, false, false, 75) &&  !($context["S_IS_BOT"] ?? null))) {
-                        // line 76
+                    if ((twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_UNREAD_TOPIC", [], "any", false, false, false, 85) &&  !($context["S_IS_BOT"] ?? null))) {
+                        // line 86
                         echo "\t\t\t\t\t\t\t\t<a class=\"unread\" href=\"";
-                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_NEWEST_POST", [], "any", false, false, false, 76);
+                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_NEWEST_POST", [], "any", false, false, false, 86);
                         echo "\">
 \t\t\t\t\t\t\t\t\t<i class=\"icon fa-file fa-fw icon-red icon-md\" aria-hidden=\"true\"></i><span class=\"sr-only\">";
-                        // line 77
+                        // line 87
                         echo $this->extensions['phpbb\template\twig\extension']->lang("NEW_POST");
                         echo "</span>
 \t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t";
                     }
-                    // line 80
+                    // line 90
                     echo "\t\t\t\t\t\t\t<a href=\"";
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_VIEW_TOPIC", [], "any", false, false, false, 80);
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_VIEW_TOPIC", [], "any", false, false, false, 90);
                     echo "\" class=\"topictitle\">";
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_TITLE", [], "any", false, false, false, 80);
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_TITLE", [], "any", false, false, false, 90);
                     echo "</a>
 \t\t\t\t\t\t\t";
-                    // line 81
-                    if ((twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_TOPIC_UNAPPROVED", [], "any", false, false, false, 81) || twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_POSTS_UNAPPROVED", [], "any", false, false, false, 81))) {
-                        // line 82
+                    // line 91
+                    if ((twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_TOPIC_UNAPPROVED", [], "any", false, false, false, 91) || twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_POSTS_UNAPPROVED", [], "any", false, false, false, 91))) {
+                        // line 92
                         echo "\t\t\t\t\t\t\t\t<a href=\"";
-                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_MCP_QUEUE", [], "any", false, false, false, 82);
+                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_MCP_QUEUE", [], "any", false, false, false, 92);
                         echo "\" title=\"";
                         echo $this->extensions['phpbb\template\twig\extension']->lang("TOPIC_UNAPPROVED");
                         echo "\">
 \t\t\t\t\t\t\t\t\t<i class=\"icon fa-question fa-fw icon-blue\" aria-hidden=\"true\"></i><span class=\"sr-only\">";
-                        // line 83
-                        echo $this->extensions['phpbb\template\twig\extension']->lang("TOPIC_UNAPPROVED");
-                        echo "</span>
-\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t";
-                    }
-                    // line 86
-                    echo "\t\t\t\t\t\t\t";
-                    if (twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_TOPIC_DELETED", [], "any", false, false, false, 86)) {
-                        // line 87
-                        echo "\t\t\t\t\t\t\t\t<a href=\"";
-                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_MCP_QUEUE", [], "any", false, false, false, 87);
-                        echo "\" title=\"";
-                        echo $this->extensions['phpbb\template\twig\extension']->lang("TOPIC_DELETED");
-                        echo "\">
-\t\t\t\t\t\t\t\t\t<i class=\"icon fa-recycle fa-fw icon-green\" aria-hidden=\"true\"></i><span class=\"sr-only\">";
-                        // line 88
-                        echo $this->extensions['phpbb\template\twig\extension']->lang("TOPIC_DELETED");
-                        echo "</span>
-\t\t\t\t\t\t\t\t</a>
-\t\t\t\t\t\t\t";
-                    }
-                    // line 91
-                    echo "\t\t\t\t\t\t\t";
-                    if (twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_TOPIC_REPORTED", [], "any", false, false, false, 91)) {
-                        // line 92
-                        echo "\t\t\t\t\t\t\t\t<a href=\"";
-                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_MCP_REPORT", [], "any", false, false, false, 92);
-                        echo "\" title=\"";
-                        echo $this->extensions['phpbb\template\twig\extension']->lang("TOPIC_REPORTED");
-                        echo "\">
-\t\t\t\t\t\t\t\t\t<i class=\"icon fa-exclamation fa-fw icon-red\" aria-hidden=\"true\"></i><span class=\"sr-only\">";
                         // line 93
-                        echo $this->extensions['phpbb\template\twig\extension']->lang("TOPIC_REPORTED");
+                        echo $this->extensions['phpbb\template\twig\extension']->lang("TOPIC_UNAPPROVED");
                         echo "</span>
 \t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t";
                     }
                     // line 96
+                    echo "\t\t\t\t\t\t\t";
+                    if (twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_TOPIC_DELETED", [], "any", false, false, false, 96)) {
+                        // line 97
+                        echo "\t\t\t\t\t\t\t\t<a href=\"";
+                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_MCP_QUEUE", [], "any", false, false, false, 97);
+                        echo "\" title=\"";
+                        echo $this->extensions['phpbb\template\twig\extension']->lang("TOPIC_DELETED");
+                        echo "\">
+\t\t\t\t\t\t\t\t\t<i class=\"icon fa-recycle fa-fw icon-green\" aria-hidden=\"true\"></i><span class=\"sr-only\">";
+                        // line 98
+                        echo $this->extensions['phpbb\template\twig\extension']->lang("TOPIC_DELETED");
+                        echo "</span>
+\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t";
+                    }
+                    // line 101
+                    echo "\t\t\t\t\t\t\t";
+                    if (twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_TOPIC_REPORTED", [], "any", false, false, false, 101)) {
+                        // line 102
+                        echo "\t\t\t\t\t\t\t\t<a href=\"";
+                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_MCP_REPORT", [], "any", false, false, false, 102);
+                        echo "\" title=\"";
+                        echo $this->extensions['phpbb\template\twig\extension']->lang("TOPIC_REPORTED");
+                        echo "\">
+\t\t\t\t\t\t\t\t\t<i class=\"icon fa-exclamation fa-fw icon-red\" aria-hidden=\"true\"></i><span class=\"sr-only\">";
+                        // line 103
+                        echo $this->extensions['phpbb\template\twig\extension']->lang("TOPIC_REPORTED");
+                        echo "</span>
+\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t";
+                    }
+                    // line 106
                     echo "\t\t\t\t\t\t\t<br />
 \t\t\t\t\t\t\t";
-                    // line 97
-                    // line 98
+                    // line 107
+                    // line 108
                     echo "
 \t\t\t\t\t\t\t";
-                    // line 99
+                    // line 109
                     if ( !($context["S_IS_BOT"] ?? null)) {
-                        // line 100
+                        // line 110
                         echo "\t\t\t\t\t\t\t\t<div class=\"responsive-show\" style=\"display: none;\">
 \t\t\t\t\t\t\t\t\t";
-                        // line 101
+                        // line 111
                         echo $this->extensions['phpbb\template\twig\extension']->lang("LAST_POST");
                         echo " ";
                         echo $this->extensions['phpbb\template\twig\extension']->lang("POST_BY_AUTHOR");
                         echo " ";
-                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "LAST_POST_AUTHOR_FULL", [], "any", false, false, false, 101);
+                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "LAST_POST_AUTHOR_FULL", [], "any", false, false, false, 111);
                         echo " &laquo; <a href=\"";
-                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_LAST_POST", [], "any", false, false, false, 101);
+                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_LAST_POST", [], "any", false, false, false, 111);
                         echo "\" title=\"";
                         echo $this->extensions['phpbb\template\twig\extension']->lang("GOTO_LAST_POST");
                         echo "\"><time datetime=\"";
-                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "LAST_POST_TIME_RFC3339", [], "any", false, false, false, 101);
+                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "LAST_POST_TIME_RFC3339", [], "any", false, false, false, 111);
                         echo "\">";
-                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "LAST_POST_TIME", [], "any", false, false, false, 101);
+                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "LAST_POST_TIME", [], "any", false, false, false, 111);
                         echo "</time></a>
 \t\t\t\t\t\t\t\t\t<br />";
-                        // line 102
+                        // line 112
                         echo $this->extensions['phpbb\template\twig\extension']->lang("POSTED");
                         echo " ";
                         echo $this->extensions['phpbb\template\twig\extension']->lang("IN");
                         echo " <a href=\"";
-                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_VIEW_FORUM", [], "any", false, false, false, 102);
+                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_VIEW_FORUM", [], "any", false, false, false, 112);
                         echo "\">";
-                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "FORUM_TITLE", [], "any", false, false, false, 102);
+                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "FORUM_TITLE", [], "any", false, false, false, 112);
                         echo "</a>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t";
-                        // line 104
-                        if (twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_REPLIES", [], "any", false, false, false, 104)) {
+                        // line 114
+                        if (twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_REPLIES", [], "any", false, false, false, 114)) {
                             echo "<span class=\"responsive-show left-box\" style=\"display: none;\">";
                             echo $this->extensions['phpbb\template\twig\extension']->lang("REPLIES");
                             echo $this->extensions['phpbb\template\twig\extension']->lang("COLON");
                             echo " <strong>";
-                            echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_REPLIES", [], "any", false, false, false, 104);
+                            echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_REPLIES", [], "any", false, false, false, 114);
                             echo "</strong></span>";
                         }
-                        // line 105
+                        // line 115
                         echo "\t\t\t\t\t\t\t";
                     }
-                    // line 106
+                    // line 116
                     echo "
 \t\t\t\t\t\t\t<div class=\"responsive-hide left-box\">
 \t\t\t\t\t\t\t\t";
-                    // line 108
-                    if (twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_HAS_POLL", [], "any", false, false, false, 108)) {
+                    // line 118
+                    if (twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_HAS_POLL", [], "any", false, false, false, 118)) {
                         echo "<i class=\"icon fa-bar-chart fa-fw\" aria-hidden=\"true\"></i>";
                     }
-                    // line 109
+                    // line 119
                     echo "\t\t\t\t\t\t\t\t";
-                    if (twig_get_attribute($this->env, $this->source, $context["searchresults"], "ATTACH_ICON_IMG", [], "any", false, false, false, 109)) {
+                    if (twig_get_attribute($this->env, $this->source, $context["searchresults"], "ATTACH_ICON_IMG", [], "any", false, false, false, 119)) {
                         echo "<i class=\"icon fa-paperclip fa-fw\" aria-hidden=\"true\"></i>";
                     }
-                    // line 110
+                    // line 120
                     echo "\t\t\t\t\t\t\t\t";
-                    // line 111
+                    // line 121
                     echo "\t\t\t\t\t\t\t\t";
                     echo $this->extensions['phpbb\template\twig\extension']->lang("POST_BY_AUTHOR");
                     echo " ";
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_AUTHOR_FULL", [], "any", false, false, false, 111);
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_AUTHOR_FULL", [], "any", false, false, false, 121);
                     echo " &raquo; <time datetime=\"";
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "FIRST_POST_TIME_RFC3339", [], "any", false, false, false, 111);
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "FIRST_POST_TIME_RFC3339", [], "any", false, false, false, 121);
                     echo "\">";
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "FIRST_POST_TIME", [], "any", false, false, false, 111);
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "FIRST_POST_TIME", [], "any", false, false, false, 121);
                     echo "</time> &raquo; ";
                     echo $this->extensions['phpbb\template\twig\extension']->lang("IN");
                     echo " <a href=\"";
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_VIEW_FORUM", [], "any", false, false, false, 111);
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_VIEW_FORUM", [], "any", false, false, false, 121);
                     echo "\">";
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "FORUM_TITLE", [], "any", false, false, false, 111);
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "FORUM_TITLE", [], "any", false, false, false, 121);
                     echo "</a>
 \t\t\t\t\t\t\t\t";
-                    // line 112
-                    // line 113
+                    // line 122
+                    // line 123
                     echo "\t\t\t\t\t\t\t</div>
 
 \t\t\t\t\t\t\t";
-                    // line 115
-                    if (twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, $context["searchresults"], "pagination", [], "any", false, false, false, 115))) {
-                        // line 116
+                    // line 125
+                    if (twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, $context["searchresults"], "pagination", [], "any", false, false, false, 125))) {
+                        // line 126
                         echo "\t\t\t\t\t\t\t<div class=\"pagination\">
 \t\t\t\t\t\t\t\t<span><i class=\"icon fa-clone fa-fw\" aria-hidden=\"true\"></i></span>
 \t\t\t\t\t\t\t\t<ul>
 \t\t\t\t\t\t\t\t";
-                        // line 119
+                        // line 129
                         $context['_parent'] = $context;
-                        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["searchresults"], "pagination", [], "any", false, false, false, 119));
+                        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["searchresults"], "pagination", [], "any", false, false, false, 129));
                         foreach ($context['_seq'] as $context["_key"] => $context["pagination"]) {
-                            // line 120
+                            // line 130
                             echo "\t\t\t\t\t\t\t\t\t";
-                            if (twig_get_attribute($this->env, $this->source, $context["pagination"], "S_IS_PREV", [], "any", false, false, false, 120)) {
-                                // line 121
+                            if (twig_get_attribute($this->env, $this->source, $context["pagination"], "S_IS_PREV", [], "any", false, false, false, 130)) {
+                                // line 131
                                 echo "\t\t\t\t\t\t\t\t\t";
-                            } elseif (twig_get_attribute($this->env, $this->source, $context["pagination"], "S_IS_CURRENT", [], "any", false, false, false, 121)) {
+                            } elseif (twig_get_attribute($this->env, $this->source, $context["pagination"], "S_IS_CURRENT", [], "any", false, false, false, 131)) {
                                 echo "<li class=\"active\"><span>";
-                                echo twig_get_attribute($this->env, $this->source, $context["pagination"], "PAGE_NUMBER", [], "any", false, false, false, 121);
+                                echo twig_get_attribute($this->env, $this->source, $context["pagination"], "PAGE_NUMBER", [], "any", false, false, false, 131);
                                 echo "</span></li>
 \t\t\t\t\t\t\t\t\t";
-                            } elseif (twig_get_attribute($this->env, $this->source,                             // line 122
-$context["pagination"], "S_IS_ELLIPSIS", [], "any", false, false, false, 122)) {
+                            } elseif (twig_get_attribute($this->env, $this->source,                             // line 132
+$context["pagination"], "S_IS_ELLIPSIS", [], "any", false, false, false, 132)) {
                                 echo "<li class=\"ellipsis\"><span>";
                                 echo $this->extensions['phpbb\template\twig\extension']->lang("ELLIPSIS");
                                 echo "</span></li>
 \t\t\t\t\t\t\t\t\t";
-                            } elseif (twig_get_attribute($this->env, $this->source,                             // line 123
-$context["pagination"], "S_IS_NEXT", [], "any", false, false, false, 123)) {
-                                // line 124
+                            } elseif (twig_get_attribute($this->env, $this->source,                             // line 133
+$context["pagination"], "S_IS_NEXT", [], "any", false, false, false, 133)) {
+                                // line 134
                                 echo "\t\t\t\t\t\t\t\t\t";
                             } else {
                                 echo "<li><a class=\"button\" href=\"";
-                                echo twig_get_attribute($this->env, $this->source, $context["pagination"], "PAGE_URL", [], "any", false, false, false, 124);
+                                echo twig_get_attribute($this->env, $this->source, $context["pagination"], "PAGE_URL", [], "any", false, false, false, 134);
                                 echo "\">";
-                                echo twig_get_attribute($this->env, $this->source, $context["pagination"], "PAGE_NUMBER", [], "any", false, false, false, 124);
+                                echo twig_get_attribute($this->env, $this->source, $context["pagination"], "PAGE_NUMBER", [], "any", false, false, false, 134);
                                 echo "</a></li>
 \t\t\t\t\t\t\t\t\t";
                             }
-                            // line 126
+                            // line 136
                             echo "\t\t\t\t\t\t\t\t";
                         }
                         $_parent = $context['_parent'];
                         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['pagination'], $context['_parent'], $context['loop']);
                         $context = array_intersect_key($context, $_parent) + $_parent;
-                        // line 127
+                        // line 137
                         echo "\t\t\t\t\t\t\t\t</ul>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t";
                     }
-                    // line 130
+                    // line 140
                     echo "
 \t\t\t\t\t\t\t";
-                    // line 131
-                    // line 132
+                    // line 141
+                    // line 142
                     echo "\t\t\t\t\t\t</div>
 \t\t\t\t\t</dt>
 \t\t\t\t\t<dd class=\"posts\">";
-                    // line 134
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_REPLIES", [], "any", false, false, false, 134);
+                    // line 144
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_REPLIES", [], "any", false, false, false, 144);
                     echo " <dfn>";
                     echo $this->extensions['phpbb\template\twig\extension']->lang("REPLIES");
                     echo "</dfn></dd>
 \t\t\t\t\t<dd class=\"views\">";
-                    // line 135
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_VIEWS", [], "any", false, false, false, 135);
+                    // line 145
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_VIEWS", [], "any", false, false, false, 145);
                     echo " <dfn>";
                     echo $this->extensions['phpbb\template\twig\extension']->lang("VIEWS");
                     echo "</dfn></dd>
 \t\t\t\t\t<dd class=\"lastpost\">
 \t\t\t\t\t\t<span><dfn>";
-                    // line 137
+                    // line 147
                     echo $this->extensions['phpbb\template\twig\extension']->lang("LAST_POST");
                     echo " </dfn>";
                     echo $this->extensions['phpbb\template\twig\extension']->lang("POST_BY_AUTHOR");
                     echo " ";
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "LAST_POST_AUTHOR_FULL", [], "any", false, false, false, 137);
-                    // line 138
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "LAST_POST_AUTHOR_FULL", [], "any", false, false, false, 147);
+                    // line 148
                     echo "\t\t\t\t\t\t\t";
                     if ( !($context["S_IS_BOT"] ?? null)) {
-                        // line 139
+                        // line 149
                         echo "\t\t\t\t\t\t\t\t<a href=\"";
-                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_LAST_POST", [], "any", false, false, false, 139);
+                        echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_LAST_POST", [], "any", false, false, false, 149);
                         echo "\" title=\"";
                         echo $this->extensions['phpbb\template\twig\extension']->lang("GOTO_LAST_POST");
                         echo "\">
 \t\t\t\t\t\t\t\t\t<i class=\"icon fa-external-link-square fa-fw icon-lightgray icon-md\" aria-hidden=\"true\"></i><span class=\"sr-only\">";
-                        // line 140
+                        // line 150
                         echo ($context["VIEW_LATEST_POST"] ?? null);
                         echo "</span>
 \t\t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t\t";
                     }
-                    // line 143
+                    // line 153
                     echo "\t\t\t\t\t\t\t<br /><time datetime=\"";
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "LAST_POST_TIME_RFC3339", [], "any", false, false, false, 143);
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "LAST_POST_TIME_RFC3339", [], "any", false, false, false, 153);
                     echo "\">";
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "LAST_POST_TIME", [], "any", false, false, false, 143);
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "LAST_POST_TIME", [], "any", false, false, false, 153);
                     echo "</time>
 \t\t\t\t\t\t</span>
 \t\t\t\t\t</dd>
 \t\t\t\t</dl>
 \t\t\t</li>
 \t\t\t";
-                    // line 148
-                    // line 149
+                    // line 158
+                    // line 159
                     echo "\t\t";
                 }
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['searchresults'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 150
+                // line 160
                 echo "\t\t</ul>
 
 \t\t</div>
 \t</div>
 \t";
             } else {
-                // line 155
+                // line 165
                 echo "\t\t<div class=\"panel\">
 \t\t\t<div class=\"inner\">
 \t\t\t<strong>";
-                // line 157
+                // line 167
                 echo $this->extensions['phpbb\template\twig\extension']->lang("NO_SEARCH_RESULTS");
                 echo "</strong>
 \t\t\t</div>
 \t\t</div>
 \t";
             }
-            // line 161
+            // line 171
             echo "
 ";
         } else {
-            // line 163
+            // line 173
             echo "
 \t";
-            // line 164
+            // line 174
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "searchresults", [], "any", false, false, false, 164));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "searchresults", [], "any", false, false, false, 174));
             $context['_iterated'] = false;
             foreach ($context['_seq'] as $context["_key"] => $context["searchresults"]) {
-                // line 165
+                // line 175
                 echo "\t\t";
-                // line 166
+                // line 176
                 echo "\t\t<div class=\"search post ";
-                if ((twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_ROW_COUNT", [], "any", false, false, false, 166) % 2 == 1)) {
+                if ((twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_ROW_COUNT", [], "any", false, false, false, 176) % 2 == 1)) {
                     echo "bg1";
                 } else {
                     echo "bg2";
                 }
-                if (twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_POST_REPORTED", [], "any", false, false, false, 166)) {
+                if (twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_POST_REPORTED", [], "any", false, false, false, 176)) {
                     echo " reported";
                 }
                 echo "\">
 \t\t\t<div class=\"inner\">
 
 \t";
-                // line 169
-                if (twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_IGNORE_POST", [], "any", false, false, false, 169)) {
-                    // line 170
+                // line 179
+                if (twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_IGNORE_POST", [], "any", false, false, false, 179)) {
+                    // line 180
                     echo "\t\t<div class=\"postbody\">
 \t\t\t";
-                    // line 171
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "L_IGNORE_POST", [], "any", false, false, false, 171);
+                    // line 181
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "L_IGNORE_POST", [], "any", false, false, false, 181);
                     echo "
 \t\t</div>
 \t";
                 } else {
-                    // line 174
+                    // line 184
                     echo "\t\t<dl class=\"postprofile\">
 \t\t\t";
-                    // line 175
-                    // line 176
+                    // line 185
+                    // line 186
                     echo "\t\t\t<dt class=\"author\">";
                     echo $this->extensions['phpbb\template\twig\extension']->lang("POST_BY_AUTHOR");
                     echo " ";
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "POST_AUTHOR_FULL", [], "any", false, false, false, 176);
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "POST_AUTHOR_FULL", [], "any", false, false, false, 186);
                     echo "</dt>
 \t\t\t<dd class=\"search-result-date\">";
-                    // line 177
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "POST_DATE", [], "any", false, false, false, 177);
+                    // line 187
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "POST_DATE", [], "any", false, false, false, 187);
                     echo "</dd>
 \t\t\t<dd>";
-                    // line 178
+                    // line 188
                     echo $this->extensions['phpbb\template\twig\extension']->lang("FORUM");
                     echo $this->extensions['phpbb\template\twig\extension']->lang("COLON");
                     echo " <a href=\"";
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_VIEW_FORUM", [], "any", false, false, false, 178);
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_VIEW_FORUM", [], "any", false, false, false, 188);
                     echo "\">";
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "FORUM_TITLE", [], "any", false, false, false, 178);
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "FORUM_TITLE", [], "any", false, false, false, 188);
                     echo "</a></dd>
 \t\t\t<dd>";
-                    // line 179
+                    // line 189
                     echo $this->extensions['phpbb\template\twig\extension']->lang("TOPIC");
                     echo $this->extensions['phpbb\template\twig\extension']->lang("COLON");
                     echo " <a href=\"";
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_VIEW_TOPIC", [], "any", false, false, false, 179);
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_VIEW_TOPIC", [], "any", false, false, false, 189);
                     echo "\">";
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_TITLE", [], "any", false, false, false, 179);
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_TITLE", [], "any", false, false, false, 189);
                     echo "</a></dd>
 \t\t\t";
-                    // line 180
-                    // line 181
+                    // line 190
+                    // line 191
                     echo "\t\t\t<dd>";
                     echo $this->extensions['phpbb\template\twig\extension']->lang("REPLIES");
                     echo $this->extensions['phpbb\template\twig\extension']->lang("COLON");
                     echo " <strong>";
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_REPLIES", [], "any", false, false, false, 181);
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_REPLIES", [], "any", false, false, false, 191);
                     echo "</strong></dd>
 \t\t\t<dd>";
-                    // line 182
+                    // line 192
                     echo $this->extensions['phpbb\template\twig\extension']->lang("VIEWS");
                     echo $this->extensions['phpbb\template\twig\extension']->lang("COLON");
                     echo " <strong>";
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_VIEWS", [], "any", false, false, false, 182);
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "TOPIC_VIEWS", [], "any", false, false, false, 192);
                     echo "</strong></dd>
 \t\t\t";
-                    // line 183
-                    // line 184
+                    // line 193
+                    // line 194
                     echo "\t\t</dl>
 
 \t\t<div class=\"postbody\">
 \t\t\t<h3><a href=\"";
-                    // line 187
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_VIEW_POST", [], "any", false, false, false, 187);
+                    // line 197
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_VIEW_POST", [], "any", false, false, false, 197);
                     echo "\">";
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "POST_SUBJECT", [], "any", false, false, false, 187);
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "POST_SUBJECT", [], "any", false, false, false, 197);
                     echo "</a></h3>
 \t\t\t<div class=\"content\">";
-                    // line 188
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "MESSAGE", [], "any", false, false, false, 188);
+                    // line 198
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "MESSAGE", [], "any", false, false, false, 198);
                     echo "</div>
 \t\t\t";
-                    // line 189
-                    // line 190
+                    // line 199
+                    // line 200
                     echo "\t\t</div>
 \t";
                 }
-                // line 192
+                // line 202
                 echo "
 \t";
-                // line 193
-                if ( !twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_IGNORE_POST", [], "any", false, false, false, 193)) {
-                    // line 194
+                // line 203
+                if ( !twig_get_attribute($this->env, $this->source, $context["searchresults"], "S_IGNORE_POST", [], "any", false, false, false, 203)) {
+                    // line 204
                     echo "\t\t<ul class=\"searchresults\">
 \t\t\t<li>
 \t\t\t\t<a href=\"";
-                    // line 196
-                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_VIEW_POST", [], "any", false, false, false, 196);
+                    // line 206
+                    echo twig_get_attribute($this->env, $this->source, $context["searchresults"], "U_VIEW_POST", [], "any", false, false, false, 206);
                     echo "\" class=\"arrow-";
                     echo ($context["S_CONTENT_FLOW_END"] ?? null);
                     echo "\">
 \t\t\t\t\t<i class=\"icon fa-angle-";
-                    // line 197
+                    // line 207
                     echo ($context["S_CONTENT_FLOW_END"] ?? null);
                     echo " fa-fw icon-black\" aria-hidden=\"true\"></i><span>";
                     echo $this->extensions['phpbb\template\twig\extension']->lang("JUMP_TO_POST");
@@ -709,22 +725,22 @@ $context["pagination"], "S_IS_NEXT", [], "any", false, false, false, 123)) {
 \t\t</ul>
 \t";
                 }
-                // line 202
+                // line 212
                 echo "
 \t\t\t</div>
 \t\t</div>
 \t\t";
-                // line 205
-                // line 206
+                // line 215
+                // line 216
                 echo "\t";
                 $context['_iterated'] = true;
             }
             if (!$context['_iterated']) {
-                // line 207
+                // line 217
                 echo "\t\t<div class=\"panel\">
 \t\t\t<div class=\"inner\">
 \t\t\t<strong>";
-                // line 209
+                // line 219
                 echo $this->extensions['phpbb\template\twig\extension']->lang("NO_SEARCH_RESULTS");
                 echo "</strong>
 \t\t\t</div>
@@ -735,18 +751,18 @@ $context["pagination"], "S_IS_NEXT", [], "any", false, false, false, 123)) {
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['searchresults'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
         }
-        // line 214
+        // line 224
         echo "
 <div class=\"action-bar bottom\">
 \t";
-        // line 216
-        if ((twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "searchresults", [], "any", false, false, false, 216)) && (($context["S_SELECT_SORT_DAYS"] ?? null) || ($context["S_SELECT_SORT_KEY"] ?? null)))) {
-            // line 217
+        // line 226
+        if ((twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "searchresults", [], "any", false, false, false, 226)) && (($context["S_SELECT_SORT_DAYS"] ?? null) || ($context["S_SELECT_SORT_KEY"] ?? null)))) {
+            // line 227
             echo "\t<form method=\"post\" action=\"";
             echo ($context["S_SEARCH_ACTION"] ?? null);
             echo "\">
 \t\t";
-            // line 218
+            // line 228
             $location = "display_options.html";
             $namespace = false;
             if (strpos($location, '@') === 0) {
@@ -754,25 +770,25 @@ $context["pagination"], "S_IS_NEXT", [], "any", false, false, false, 123)) {
                 $previous_look_up_order = $this->env->getNamespaceLookUpOrder();
                 $this->env->setNamespaceLookUpOrder(array($namespace, '__main__'));
             }
-            $this->loadTemplate("display_options.html", "search_results.html", 218)->display($context);
+            $this->loadTemplate("display_options.html", "search_results.html", 228)->display($context);
             if ($namespace) {
                 $this->env->setNamespaceLookUpOrder($previous_look_up_order);
             }
-            // line 219
+            // line 229
             echo "\t</form>
 \t\t";
         }
-        // line 221
+        // line 231
         echo "
 \t<div class=\"pagination\">
 \t\t";
-        // line 223
+        // line 233
         echo ($context["SEARCH_MATCHES"] ?? null);
         echo "
 \t\t";
-        // line 224
-        if (twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "pagination", [], "any", false, false, false, 224))) {
-            // line 225
+        // line 234
+        if (twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "pagination", [], "any", false, false, false, 234))) {
+            // line 235
             echo "\t\t\t";
             $location = "pagination.html";
             $namespace = false;
@@ -781,25 +797,25 @@ $context["pagination"], "S_IS_NEXT", [], "any", false, false, false, 123)) {
                 $previous_look_up_order = $this->env->getNamespaceLookUpOrder();
                 $this->env->setNamespaceLookUpOrder(array($namespace, '__main__'));
             }
-            $this->loadTemplate("pagination.html", "search_results.html", 225)->display($context);
+            $this->loadTemplate("pagination.html", "search_results.html", 235)->display($context);
             if ($namespace) {
                 $this->env->setNamespaceLookUpOrder($previous_look_up_order);
             }
-            // line 226
+            // line 236
             echo "\t\t";
         } else {
-            // line 227
+            // line 237
             echo "\t\t\t &bull; ";
             echo ($context["PAGE_NUMBER"] ?? null);
             echo "
 \t\t";
         }
-        // line 229
+        // line 239
         echo "\t</div>
 </div>
 
 ";
-        // line 232
+        // line 242
         $location = "jumpbox.html";
         $namespace = false;
         if (strpos($location, '@') === 0) {
@@ -807,14 +823,14 @@ $context["pagination"], "S_IS_NEXT", [], "any", false, false, false, 123)) {
             $previous_look_up_order = $this->env->getNamespaceLookUpOrder();
             $this->env->setNamespaceLookUpOrder(array($namespace, '__main__'));
         }
-        $this->loadTemplate("jumpbox.html", "search_results.html", 232)->display($context);
+        $this->loadTemplate("jumpbox.html", "search_results.html", 242)->display($context);
         if ($namespace) {
             $this->env->setNamespaceLookUpOrder($previous_look_up_order);
         }
-        // line 233
+        // line 243
         echo "
 ";
-        // line 234
+        // line 244
         $location = "overall_footer.html";
         $namespace = false;
         if (strpos($location, '@') === 0) {
@@ -822,7 +838,7 @@ $context["pagination"], "S_IS_NEXT", [], "any", false, false, false, 123)) {
             $previous_look_up_order = $this->env->getNamespaceLookUpOrder();
             $this->env->setNamespaceLookUpOrder(array($namespace, '__main__'));
         }
-        $this->loadTemplate("overall_footer.html", "search_results.html", 234)->display($context);
+        $this->loadTemplate("overall_footer.html", "search_results.html", 244)->display($context);
         if ($namespace) {
             $this->env->setNamespaceLookUpOrder($previous_look_up_order);
         }
@@ -840,7 +856,7 @@ $context["pagination"], "S_IS_NEXT", [], "any", false, false, false, 123)) {
 
     public function getDebugInfo()
     {
-        return array (  818 => 234,  815 => 233,  803 => 232,  798 => 229,  792 => 227,  789 => 226,  776 => 225,  774 => 224,  770 => 223,  766 => 221,  762 => 219,  750 => 218,  745 => 217,  743 => 216,  739 => 214,  728 => 209,  724 => 207,  719 => 206,  718 => 205,  713 => 202,  703 => 197,  697 => 196,  693 => 194,  691 => 193,  688 => 192,  684 => 190,  683 => 189,  679 => 188,  673 => 187,  668 => 184,  667 => 183,  660 => 182,  652 => 181,  651 => 180,  642 => 179,  633 => 178,  629 => 177,  622 => 176,  621 => 175,  618 => 174,  612 => 171,  609 => 170,  607 => 169,  593 => 166,  591 => 165,  586 => 164,  583 => 163,  579 => 161,  572 => 157,  568 => 155,  561 => 150,  555 => 149,  554 => 148,  543 => 143,  537 => 140,  530 => 139,  527 => 138,  521 => 137,  514 => 135,  508 => 134,  504 => 132,  503 => 131,  500 => 130,  495 => 127,  489 => 126,  479 => 124,  477 => 123,  471 => 122,  464 => 121,  461 => 120,  457 => 119,  452 => 116,  450 => 115,  446 => 113,  445 => 112,  428 => 111,  426 => 110,  421 => 109,  417 => 108,  413 => 106,  410 => 105,  401 => 104,  390 => 102,  374 => 101,  371 => 100,  369 => 99,  366 => 98,  365 => 97,  362 => 96,  356 => 93,  349 => 92,  346 => 91,  340 => 88,  333 => 87,  330 => 86,  324 => 83,  317 => 82,  315 => 81,  308 => 80,  302 => 77,  297 => 76,  294 => 75,  293 => 74,  290 => 73,  284 => 72,  273 => 71,  263 => 69,  261 => 68,  257 => 67,  250 => 62,  248 => 61,  245 => 60,  243 => 59,  240 => 58,  235 => 55,  229 => 53,  226 => 52,  213 => 51,  211 => 50,  206 => 49,  198 => 48,  194 => 46,  193 => 45,  190 => 44,  181 => 38,  175 => 37,  170 => 35,  166 => 34,  162 => 33,  157 => 31,  154 => 30,  152 => 29,  148 => 27,  146 => 26,  143 => 25,  142 => 24,  139 => 23,  130 => 19,  122 => 18,  119 => 17,  110 => 13,  104 => 12,  101 => 11,  99 => 10,  96 => 9,  90 => 8,  81 => 7,  72 => 6,  56 => 5,  53 => 4,  52 => 3,  49 => 2,  37 => 1,);
+        return array (  834 => 244,  831 => 243,  819 => 242,  814 => 239,  808 => 237,  805 => 236,  792 => 235,  790 => 234,  786 => 233,  782 => 231,  778 => 229,  766 => 228,  761 => 227,  759 => 226,  755 => 224,  744 => 219,  740 => 217,  735 => 216,  734 => 215,  729 => 212,  719 => 207,  713 => 206,  709 => 204,  707 => 203,  704 => 202,  700 => 200,  699 => 199,  695 => 198,  689 => 197,  684 => 194,  683 => 193,  676 => 192,  668 => 191,  667 => 190,  658 => 189,  649 => 188,  645 => 187,  638 => 186,  637 => 185,  634 => 184,  628 => 181,  625 => 180,  623 => 179,  609 => 176,  607 => 175,  602 => 174,  599 => 173,  595 => 171,  588 => 167,  584 => 165,  577 => 160,  571 => 159,  570 => 158,  559 => 153,  553 => 150,  546 => 149,  543 => 148,  537 => 147,  530 => 145,  524 => 144,  520 => 142,  519 => 141,  516 => 140,  511 => 137,  505 => 136,  495 => 134,  493 => 133,  487 => 132,  480 => 131,  477 => 130,  473 => 129,  468 => 126,  466 => 125,  462 => 123,  461 => 122,  444 => 121,  442 => 120,  437 => 119,  433 => 118,  429 => 116,  426 => 115,  417 => 114,  406 => 112,  390 => 111,  387 => 110,  385 => 109,  382 => 108,  381 => 107,  378 => 106,  372 => 103,  365 => 102,  362 => 101,  356 => 98,  349 => 97,  346 => 96,  340 => 93,  333 => 92,  331 => 91,  324 => 90,  318 => 87,  313 => 86,  310 => 85,  309 => 84,  306 => 83,  300 => 82,  289 => 81,  285 => 79,  283 => 78,  279 => 77,  270 => 71,  266 => 70,  262 => 69,  258 => 68,  250 => 62,  248 => 61,  245 => 60,  243 => 59,  240 => 58,  235 => 55,  229 => 53,  226 => 52,  213 => 51,  211 => 50,  206 => 49,  198 => 48,  194 => 46,  193 => 45,  190 => 44,  181 => 38,  175 => 37,  170 => 35,  166 => 34,  162 => 33,  157 => 31,  154 => 30,  152 => 29,  148 => 27,  146 => 26,  143 => 25,  142 => 24,  139 => 23,  130 => 19,  122 => 18,  119 => 17,  110 => 13,  104 => 12,  101 => 11,  99 => 10,  96 => 9,  90 => 8,  81 => 7,  72 => 6,  56 => 5,  53 => 4,  52 => 3,  49 => 2,  37 => 1,);
     }
 
     public function getSourceContext()

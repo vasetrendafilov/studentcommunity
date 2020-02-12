@@ -851,6 +851,10 @@ td.name {
 	background-color: #F9F9F9;
 }
 
+.forum-desc.row1 div img{
+	width: 50px;
+}
+
 table.zebra-table tbody tr:nth-child(odd) {
 	background-color: #F9F9F9;
 }

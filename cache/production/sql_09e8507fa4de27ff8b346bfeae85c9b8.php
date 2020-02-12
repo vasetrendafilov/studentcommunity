@@ -1,5 +1,5 @@
 <?php exit; ?>
-1580735542
+1581543199
 SELECT smiley_id FROM phpbb_smilies WHERE display_on_posting = 0 LIMIT 1
 6
 a:0:{}

@@ -98,7 +98,7 @@ class __TwigTemplate_98647b9bd32e60536513bc51b9e2daee175b0fdaf30ba3d95522d2a77bf
 
 \t<div id=\"cp-menu\" class=\"cp-menu\">
 \t\t<div id=\"navigation\" class=\"navigation\" role=\"navigation\">
-
+<ul>
 \t\t";
         // line 25
         if (($context["S_PRIVMSGS"] ?? null)) {
@@ -111,7 +111,7 @@ class __TwigTemplate_98647b9bd32e60536513bc51b9e2daee175b0fdaf30ba3d95522d2a77bf
                 echo "\t\t\t\t";
                 if ((($context["S_PRIVMSGS"] ?? null) &&  !twig_get_attribute($this->env, $this->source, $context["t_block2"], "S_LAST_ROW", [], "any", false, false, false, 27))) {
                     // line 28
-                    echo "\t\t\t\t<ul>
+                    echo "
 \t\t\t\t\t";
                     // line 29
                     if (twig_get_attribute($this->env, $this->source, $context["t_block2"], "S_SELECTED", [], "any", false, false, false, 29)) {
@@ -132,7 +132,7 @@ class __TwigTemplate_98647b9bd32e60536513bc51b9e2daee175b0fdaf30ba3d95522d2a77bf
 \t\t\t\t\t";
                     }
                     // line 34
-                    echo "\t\t\t\t</ul>
+                    echo "
 \t\t\t\t";
                 }
                 // line 36
@@ -143,24 +143,34 @@ class __TwigTemplate_98647b9bd32e60536513bc51b9e2daee175b0fdaf30ba3d95522d2a77bf
             $context = array_intersect_key($context, $_parent) + $_parent;
             // line 37
             echo "
-\t\t\t<hr />
 \t\t\t";
-            // line 39
+            // line 38
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "folder", [], "any", false, false, false, 39));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "folder", [], "any", false, false, false, 38));
             foreach ($context['_seq'] as $context["_key"] => $context["folder"]) {
-                // line 40
+                // line 39
                 echo "\t\t\t\t";
-                if (twig_get_attribute($this->env, $this->source, $context["folder"], "S_FIRST_ROW", [], "any", false, false, false, 40)) {
-                    echo "<ul>";
-                }
-                // line 41
-                echo "\t\t\t\t";
-                if (twig_get_attribute($this->env, $this->source, $context["folder"], "S_CUR_FOLDER", [], "any", false, false, false, 41)) {
-                    // line 42
+                if (twig_get_attribute($this->env, $this->source, $context["folder"], "S_CUR_FOLDER", [], "any", false, false, false, 39)) {
+                    // line 40
                     echo "\t\t\t\t\t<li id=\"active-subsection\" class=\"active-subsection\"><a href=\"";
-                    echo twig_get_attribute($this->env, $this->source, $context["folder"], "U_FOLDER", [], "any", false, false, false, 42);
+                    echo twig_get_attribute($this->env, $this->source, $context["folder"], "U_FOLDER", [], "any", false, false, false, 40);
                     echo "\">";
+                    if ((twig_get_attribute($this->env, $this->source, $context["folder"], "UNREAD_MESSAGES", [], "any", false, false, false, 40) > 0)) {
+                        echo "<strong>";
+                        echo twig_get_attribute($this->env, $this->source, $context["folder"], "FOLDER_NAME", [], "any", false, false, false, 40);
+                        echo " (";
+                        echo twig_get_attribute($this->env, $this->source, $context["folder"], "UNREAD_MESSAGES", [], "any", false, false, false, 40);
+                        echo ")</strong>";
+                    } else {
+                        echo twig_get_attribute($this->env, $this->source, $context["folder"], "FOLDER_NAME", [], "any", false, false, false, 40);
+                    }
+                    echo "</a></li>
+\t\t\t\t";
+                } else {
+                    // line 42
+                    echo "\t\t\t\t\t<li><a href=\"";
+                    echo twig_get_attribute($this->env, $this->source, $context["folder"], "U_FOLDER", [], "any", false, false, false, 42);
+                    echo "\"><span>";
                     if ((twig_get_attribute($this->env, $this->source, $context["folder"], "UNREAD_MESSAGES", [], "any", false, false, false, 42) > 0)) {
                         echo "<strong>";
                         echo twig_get_attribute($this->env, $this->source, $context["folder"], "FOLDER_NAME", [], "any", false, false, false, 42);
@@ -170,116 +180,93 @@ class __TwigTemplate_98647b9bd32e60536513bc51b9e2daee175b0fdaf30ba3d95522d2a77bf
                     } else {
                         echo twig_get_attribute($this->env, $this->source, $context["folder"], "FOLDER_NAME", [], "any", false, false, false, 42);
                     }
-                    echo "</a></li>
-\t\t\t\t";
-                } else {
-                    // line 44
-                    echo "\t\t\t\t\t<li><a href=\"";
-                    echo twig_get_attribute($this->env, $this->source, $context["folder"], "U_FOLDER", [], "any", false, false, false, 44);
-                    echo "\"><span>";
-                    if ((twig_get_attribute($this->env, $this->source, $context["folder"], "UNREAD_MESSAGES", [], "any", false, false, false, 44) > 0)) {
-                        echo "<strong>";
-                        echo twig_get_attribute($this->env, $this->source, $context["folder"], "FOLDER_NAME", [], "any", false, false, false, 44);
-                        echo " (";
-                        echo twig_get_attribute($this->env, $this->source, $context["folder"], "UNREAD_MESSAGES", [], "any", false, false, false, 44);
-                        echo ")</strong>";
-                    } else {
-                        echo twig_get_attribute($this->env, $this->source, $context["folder"], "FOLDER_NAME", [], "any", false, false, false, 44);
-                    }
                     echo "</span></a></li>
 \t\t\t\t";
                 }
-                // line 46
-                echo "\t\t\t\t";
-                if (twig_get_attribute($this->env, $this->source, $context["folder"], "S_LAST_ROW", [], "any", false, false, false, 46)) {
-                    echo "</ul>";
-                }
-                // line 47
-                echo "\t\t\t";
+                // line 44
+                echo "
+\t\t\t";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['folder'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 48
-            echo "\t\t\t<hr />
+            // line 46
+            echo "
 \t\t";
         }
-        // line 50
+        // line 48
         echo "
-\t\t\t<ul>
+
 \t\t";
-        // line 52
+        // line 50
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "t_block2", [], "any", false, false, false, 52));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "t_block2", [], "any", false, false, false, 50));
         foreach ($context['_seq'] as $context["_key"] => $context["t_block2"]) {
-            // line 53
+            // line 51
             echo "\t\t\t";
-            if (((($context["S_PRIVMSGS"] ?? null) && twig_get_attribute($this->env, $this->source, $context["t_block2"], "S_LAST_ROW", [], "any", false, false, false, 53)) ||  !($context["S_PRIVMSGS"] ?? null))) {
-                // line 54
+            if (((($context["S_PRIVMSGS"] ?? null) && twig_get_attribute($this->env, $this->source, $context["t_block2"], "S_LAST_ROW", [], "any", false, false, false, 51)) ||  !($context["S_PRIVMSGS"] ?? null))) {
+                // line 52
                 echo "\t\t\t\t";
-                if (twig_get_attribute($this->env, $this->source, $context["t_block2"], "S_SELECTED", [], "any", false, false, false, 54)) {
-                    // line 55
+                if (twig_get_attribute($this->env, $this->source, $context["t_block2"], "S_SELECTED", [], "any", false, false, false, 52)) {
+                    // line 53
                     echo "\t\t\t\t\t<li id=\"active-subsection\" class=\"active-subsection\"><a href=\"";
+                    echo twig_get_attribute($this->env, $this->source, $context["t_block2"], "U_TITLE", [], "any", false, false, false, 53);
+                    echo "\"><span>";
+                    echo twig_get_attribute($this->env, $this->source, $context["t_block2"], "L_TITLE", [], "any", false, false, false, 53);
+                    echo "</span></a></li>
+\t\t\t\t";
+                } else {
+                    // line 55
+                    echo "\t\t\t\t\t<li><a href=\"";
                     echo twig_get_attribute($this->env, $this->source, $context["t_block2"], "U_TITLE", [], "any", false, false, false, 55);
                     echo "\"><span>";
                     echo twig_get_attribute($this->env, $this->source, $context["t_block2"], "L_TITLE", [], "any", false, false, false, 55);
                     echo "</span></a></li>
 \t\t\t\t";
-                } else {
-                    // line 57
-                    echo "\t\t\t\t\t<li><a href=\"";
-                    echo twig_get_attribute($this->env, $this->source, $context["t_block2"], "U_TITLE", [], "any", false, false, false, 57);
-                    echo "\"><span>";
-                    echo twig_get_attribute($this->env, $this->source, $context["t_block2"], "L_TITLE", [], "any", false, false, false, 57);
-                    echo "</span></a></li>
-\t\t\t\t";
                 }
-                // line 59
+                // line 57
                 echo "\t\t\t";
             }
-            // line 60
+            // line 58
             echo "\t\t";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['t_block2'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 61
-        echo "\t\t\t</ul>
+        // line 59
+        echo "</ul>
 \t\t</div>
 
 \t\t";
-        // line 64
-        if ((twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "friends_online", [], "any", false, false, false, 64)) || twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "friends_offline", [], "any", false, false, false, 64)))) {
-            // line 65
+        // line 62
+        if ((twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "friends_online", [], "any", false, false, false, 62)) || twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "friends_offline", [], "any", false, false, false, 62)))) {
+            // line 63
             echo "\t\t<div class=\"cp-mini\">
 \t\t\t<div class=\"inner\">
 
 \t\t\t<dl class=\"mini\">
 \t\t\t\t<dt>";
-            // line 69
+            // line 67
             echo $this->extensions['phpbb\template\twig\extension']->lang("FRIENDS");
             echo "</dt>
 
 \t\t\t\t";
-            // line 71
+            // line 69
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "friends_online", [], "any", false, false, false, 71));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "friends_online", [], "any", false, false, false, 69));
             foreach ($context['_seq'] as $context["_key"] => $context["friends_online"]) {
-                // line 72
+                // line 70
                 echo "\t\t\t\t\t<dd class=\"friend-online\" title=\"";
                 echo $this->extensions['phpbb\template\twig\extension']->lang("FRIENDS_ONLINE");
                 echo "\">";
-                echo twig_get_attribute($this->env, $this->source, $context["friends_online"], "USERNAME_FULL", [], "any", false, false, false, 72);
+                echo twig_get_attribute($this->env, $this->source, $context["friends_online"], "USERNAME_FULL", [], "any", false, false, false, 70);
                 echo " ";
                 if (($context["S_SHOW_PM_BOX"] ?? null)) {
                     echo " <input type=\"submit\" name=\"add_to[";
-                    echo twig_get_attribute($this->env, $this->source, $context["friends_online"], "USER_ID", [], "any", false, false, false, 72);
+                    echo twig_get_attribute($this->env, $this->source, $context["friends_online"], "USER_ID", [], "any", false, false, false, 70);
                     echo "]\" value=\"";
                     echo $this->extensions['phpbb\template\twig\extension']->lang("ADD");
                     echo "\" class=\"button2\" />";
-                }
-                if ((twig_get_attribute($this->env, $this->source, $context["friends_online"], "S_LAST_ROW", [], "any", false, false, false, 72) && twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "friends_offline", [], "any", false, false, false, 72)))) {
-                    echo "<hr />";
                 }
                 echo "</dd>
 \t\t\t\t";
@@ -287,22 +274,22 @@ class __TwigTemplate_98647b9bd32e60536513bc51b9e2daee175b0fdaf30ba3d95522d2a77bf
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['friends_online'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 74
+            // line 72
             echo "
 \t\t\t\t";
-            // line 75
+            // line 73
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "friends_offline", [], "any", false, false, false, 75));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "friends_offline", [], "any", false, false, false, 73));
             foreach ($context['_seq'] as $context["_key"] => $context["friends_offline"]) {
-                // line 76
+                // line 74
                 echo "\t\t\t\t\t<dd class=\"friend-offline\" title=\"";
                 echo $this->extensions['phpbb\template\twig\extension']->lang("FRIENDS_OFFLINE");
                 echo "\">";
-                echo twig_get_attribute($this->env, $this->source, $context["friends_offline"], "USERNAME_FULL", [], "any", false, false, false, 76);
+                echo twig_get_attribute($this->env, $this->source, $context["friends_offline"], "USERNAME_FULL", [], "any", false, false, false, 74);
                 echo " ";
                 if (($context["S_SHOW_PM_BOX"] ?? null)) {
                     echo "<input type=\"submit\" name=\"add_to[";
-                    echo twig_get_attribute($this->env, $this->source, $context["friends_offline"], "USER_ID", [], "any", false, false, false, 76);
+                    echo twig_get_attribute($this->env, $this->source, $context["friends_offline"], "USER_ID", [], "any", false, false, false, 74);
                     echo "]\" value=\"";
                     echo $this->extensions['phpbb\template\twig\extension']->lang("ADD");
                     echo "\" class=\"button2\" />";
@@ -313,58 +300,58 @@ class __TwigTemplate_98647b9bd32e60536513bc51b9e2daee175b0fdaf30ba3d95522d2a77bf
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['friends_offline'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 78
+            // line 76
             echo "\t\t\t</dl>
 
 \t\t\t</div>
 \t\t</div>
 \t\t";
         }
-        // line 83
+        // line 81
         echo "
 \t\t";
-        // line 84
+        // line 82
         if (($context["S_SHOW_COLOUR_LEGEND"] ?? null)) {
-            // line 85
+            // line 83
             echo "\t\t<div class=\"cp-mini\">
 \t\t\t<div class=\"inner\">
 
 \t\t\t<dl class=\"mini\">
 \t\t\t\t<dt>";
-            // line 89
+            // line 87
             echo $this->extensions['phpbb\template\twig\extension']->lang("MESSAGE_COLOURS");
             echo "</dt>
 \t\t\t\t";
-            // line 90
+            // line 88
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "pm_colour_info", [], "any", false, false, false, 90));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "pm_colour_info", [], "any", false, false, false, 88));
             foreach ($context['_seq'] as $context["_key"] => $context["pm_colour_info"]) {
-                // line 91
+                // line 89
                 echo "\t\t\t\t\t<dd class=\"pm-legend";
-                if (twig_get_attribute($this->env, $this->source, $context["pm_colour_info"], "CLASS", [], "any", false, false, false, 91)) {
+                if (twig_get_attribute($this->env, $this->source, $context["pm_colour_info"], "CLASS", [], "any", false, false, false, 89)) {
                     echo " ";
-                    echo twig_get_attribute($this->env, $this->source, $context["pm_colour_info"], "CLASS", [], "any", false, false, false, 91);
+                    echo twig_get_attribute($this->env, $this->source, $context["pm_colour_info"], "CLASS", [], "any", false, false, false, 89);
                 }
                 echo "\">";
-                if (twig_get_attribute($this->env, $this->source, $context["pm_colour_info"], "IMG", [], "any", false, false, false, 91)) {
-                    echo twig_get_attribute($this->env, $this->source, $context["pm_colour_info"], "IMG", [], "any", false, false, false, 91);
+                if (twig_get_attribute($this->env, $this->source, $context["pm_colour_info"], "IMG", [], "any", false, false, false, 89)) {
+                    echo twig_get_attribute($this->env, $this->source, $context["pm_colour_info"], "IMG", [], "any", false, false, false, 89);
                     echo " ";
                 }
-                echo twig_get_attribute($this->env, $this->source, $context["pm_colour_info"], "LANG", [], "any", false, false, false, 91);
+                echo twig_get_attribute($this->env, $this->source, $context["pm_colour_info"], "LANG", [], "any", false, false, false, 89);
                 echo "</dd>
 \t\t\t\t";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['pm_colour_info'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 93
+            // line 91
             echo "\t\t\t</dl>
 
 \t\t\t</div>
 \t\t</div>
 \t\t";
         }
-        // line 98
+        // line 96
         echo "
 \t</div>
 
@@ -384,7 +371,7 @@ class __TwigTemplate_98647b9bd32e60536513bc51b9e2daee175b0fdaf30ba3d95522d2a77bf
 
     public function getDebugInfo()
     {
-        return array (  368 => 98,  361 => 93,  343 => 91,  339 => 90,  335 => 89,  329 => 85,  327 => 84,  324 => 83,  317 => 78,  298 => 76,  294 => 75,  291 => 74,  269 => 72,  265 => 71,  260 => 69,  254 => 65,  252 => 64,  247 => 61,  241 => 60,  238 => 59,  230 => 57,  222 => 55,  219 => 54,  216 => 53,  212 => 52,  208 => 50,  204 => 48,  198 => 47,  193 => 46,  177 => 44,  161 => 42,  158 => 41,  153 => 40,  149 => 39,  145 => 37,  139 => 36,  135 => 34,  127 => 32,  119 => 30,  117 => 29,  114 => 28,  111 => 27,  106 => 26,  104 => 25,  93 => 16,  85 => 14,  83 => 13,  78 => 10,  63 => 8,  59 => 7,  52 => 3,  49 => 2,  37 => 1,);
+        return array (  355 => 96,  348 => 91,  330 => 89,  326 => 88,  322 => 87,  316 => 83,  314 => 82,  311 => 81,  304 => 76,  285 => 74,  281 => 73,  278 => 72,  259 => 70,  255 => 69,  250 => 67,  244 => 63,  242 => 62,  237 => 59,  231 => 58,  228 => 57,  220 => 55,  212 => 53,  209 => 52,  206 => 51,  202 => 50,  198 => 48,  194 => 46,  187 => 44,  171 => 42,  155 => 40,  152 => 39,  148 => 38,  145 => 37,  139 => 36,  135 => 34,  127 => 32,  119 => 30,  117 => 29,  114 => 28,  111 => 27,  106 => 26,  104 => 25,  93 => 16,  85 => 14,  83 => 13,  78 => 10,  63 => 8,  59 => 7,  52 => 3,  49 => 2,  37 => 1,);
     }
 
     public function getSourceContext()

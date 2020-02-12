@@ -71,7 +71,6 @@ hr {
 }
 
 hr.dashed {
-	border-top-style: dashed;
 	margin: 10px 0;
 }
 
@@ -258,9 +257,10 @@ input:checked + .slider:before {
 
 .forumbg {
 	margin-bottom: 4px;
-	padding: 5px;
+	padding: 10px;
 	clear: both;
 	border-radius: 7px;
+	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .panel {
@@ -687,16 +687,12 @@ table.table1 thead th {
 	font-weight: normal;
 	text-transform: uppercase;
 	line-height: 1.3em;
-	font-size: 1em;
+	font-size: 1.2em;
 	padding: 0 0 4px 3px;
 }
 
 table.table1 thead th span {
 	padding-left: 7px;
-}
-
-table.table1 tbody tr {
-	border: 1px solid transparent;
 }
 
 table.table1 td {
@@ -746,7 +742,9 @@ table.info tbody th {
 .forumbg table.table1 {
 	margin: 0;
 }
-
+.forumbg-table{
+	padding: 10px;
+}
 .forumbg-table > .inner {
 	margin: 0 -1px;
 }

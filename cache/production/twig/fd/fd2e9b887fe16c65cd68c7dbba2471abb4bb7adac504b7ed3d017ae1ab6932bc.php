@@ -245,21 +245,7 @@ class __TwigTemplate_5d37f11ed8c9c995ea74abd30464b0eefab4baa29345b14291bf3e3a879
                 $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "notification_list", [], "any", false, false, false, 65));
                 foreach ($context['_seq'] as $context["_key"] => $context["notification_list"]) {
                     // line 66
-                    echo "\t\t\t\t\t\t<li class=\"row";
-                    if (twig_get_attribute($this->env, $this->source, $context["notification_list"], "UNREAD", [], "any", false, false, false, 66)) {
-                        echo " bg3";
-                    } else {
-                        if ((twig_get_attribute($this->env, $this->source, $context["notification_list"], "S_ROW_COUNT", [], "any", false, false, false, 66) % 2 == 1)) {
-                            echo " bg1";
-                        } else {
-                            echo " bg2";
-                        }
-                    }
-                    if (twig_get_attribute($this->env, $this->source, $context["notification_list"], "STYLING", [], "any", false, false, false, 66)) {
-                        echo " ";
-                        echo twig_get_attribute($this->env, $this->source, $context["notification_list"], "STYLING", [], "any", false, false, false, 66);
-                    }
-                    echo "\">
+                    echo "\t\t\t\t\t\t<li class=\"row\">
 \t\t\t\t\t\t\t<dl>
 \t\t\t\t\t\t\t\t<dt>
 \t\t\t\t\t\t\t\t\t<div class=\"list-inner\">
@@ -459,7 +445,7 @@ class __TwigTemplate_5d37f11ed8c9c995ea74abd30464b0eefab4baa29345b14291bf3e3a879
 
     public function getDebugInfo()
     {
-        return array (  437 => 120,  432 => 117,  426 => 114,  420 => 113,  412 => 112,  408 => 111,  404 => 110,  401 => 109,  399 => 108,  394 => 105,  390 => 103,  384 => 101,  378 => 97,  372 => 95,  369 => 94,  356 => 93,  354 => 92,  348 => 91,  341 => 86,  325 => 82,  316 => 77,  309 => 76,  302 => 75,  298 => 74,  289 => 73,  279 => 72,  276 => 71,  268 => 70,  248 => 66,  244 => 65,  236 => 60,  232 => 59,  223 => 52,  217 => 50,  214 => 49,  201 => 48,  199 => 47,  192 => 46,  184 => 45,  180 => 43,  177 => 42,  172 => 39,  166 => 38,  162 => 36,  144 => 34,  140 => 33,  137 => 32,  132 => 31,  128 => 30,  118 => 28,  110 => 25,  107 => 24,  104 => 23,  100 => 22,  95 => 19,  86 => 17,  82 => 16,  78 => 15,  73 => 12,  71 => 11,  66 => 9,  59 => 5,  52 => 3,  49 => 2,  37 => 1,);
+        return array (  423 => 120,  418 => 117,  412 => 114,  406 => 113,  398 => 112,  394 => 111,  390 => 110,  387 => 109,  385 => 108,  380 => 105,  376 => 103,  370 => 101,  364 => 97,  358 => 95,  355 => 94,  342 => 93,  340 => 92,  334 => 91,  327 => 86,  311 => 82,  302 => 77,  295 => 76,  288 => 75,  284 => 74,  275 => 73,  265 => 72,  262 => 71,  254 => 70,  248 => 66,  244 => 65,  236 => 60,  232 => 59,  223 => 52,  217 => 50,  214 => 49,  201 => 48,  199 => 47,  192 => 46,  184 => 45,  180 => 43,  177 => 42,  172 => 39,  166 => 38,  162 => 36,  144 => 34,  140 => 33,  137 => 32,  132 => 31,  128 => 30,  118 => 28,  110 => 25,  107 => 24,  104 => 23,  100 => 22,  95 => 19,  86 => 17,  82 => 16,  78 => 15,  73 => 12,  71 => 11,  66 => 9,  59 => 5,  52 => 3,  49 => 2,  37 => 1,);
     }
 
     public function getSourceContext()

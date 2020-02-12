@@ -185,19 +185,18 @@ class __TwigTemplate_0a817aa5ccf6e411f3d02e747f949b2574c23dbeeafb5f7b5c95d79614d
 \t";
         // line 56
         // line 57
-        echo "\t<hr />
-
+        echo "
 \t";
+        // line 58
         // line 59
-        // line 60
         echo "\t<dl>
 \t\t<dt><label for=\"lang\">";
-        // line 61
+        // line 60
         echo $this->extensions['phpbb\template\twig\extension']->lang("LANGUAGE");
         echo $this->extensions['phpbb\template\twig\extension']->lang("COLON");
         echo "</label></dt>
 \t\t<dd><select name=\"lang\" id=\"lang\" onchange=\"change_language(this.value); return false;\" tabindex=\"6\" title=\"";
-        // line 62
+        // line 61
         echo $this->extensions['phpbb\template\twig\extension']->lang("LANGUAGE");
         echo "\">";
         echo ($context["S_LANG_OPTIONS"] ?? null);
@@ -205,7 +204,7 @@ class __TwigTemplate_0a817aa5ccf6e411f3d02e747f949b2574c23dbeeafb5f7b5c95d79614d
 \t</dl>
 
 \t";
-        // line 65
+        // line 64
         $location = "timezone_option.html";
         $namespace = false;
         if (strpos($location, '@') === 0) {
@@ -213,61 +212,61 @@ class __TwigTemplate_0a817aa5ccf6e411f3d02e747f949b2574c23dbeeafb5f7b5c95d79614d
             $previous_look_up_order = $this->env->getNamespaceLookUpOrder();
             $this->env->setNamespaceLookUpOrder(array($namespace, '__main__'));
         }
-        $this->loadTemplate("timezone_option.html", "ucp_register.html", 65)->display($context);
+        $this->loadTemplate("timezone_option.html", "ucp_register.html", 64)->display($context);
         if ($namespace) {
             $this->env->setNamespaceLookUpOrder($previous_look_up_order);
         }
-        // line 66
+        // line 65
         echo "
 \t";
+        // line 66
         // line 67
-        // line 68
         echo "\t";
-        if (twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "profile_fields", [], "any", false, false, false, 68))) {
-            // line 69
+        if (twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "profile_fields", [], "any", false, false, false, 67))) {
+            // line 68
             echo "\t\t<dl><dd><strong>";
             echo $this->extensions['phpbb\template\twig\extension']->lang("ITEMS_REQUIRED");
             echo "</strong></dd></dl>
 
 \t";
-            // line 71
+            // line 70
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "profile_fields", [], "any", false, false, false, 71));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["loops"] ?? null), "profile_fields", [], "any", false, false, false, 70));
             foreach ($context['_seq'] as $context["_key"] => $context["profile_fields"]) {
-                // line 72
+                // line 71
                 echo "\t\t<dl>
 \t\t\t<dt><label";
-                // line 73
-                if (twig_get_attribute($this->env, $this->source, $context["profile_fields"], "FIELD_ID", [], "any", false, false, false, 73)) {
+                // line 72
+                if (twig_get_attribute($this->env, $this->source, $context["profile_fields"], "FIELD_ID", [], "any", false, false, false, 72)) {
                     echo " for=\"";
-                    echo twig_get_attribute($this->env, $this->source, $context["profile_fields"], "FIELD_ID", [], "any", false, false, false, 73);
+                    echo twig_get_attribute($this->env, $this->source, $context["profile_fields"], "FIELD_ID", [], "any", false, false, false, 72);
                     echo "\"";
                 }
                 echo ">";
-                echo twig_get_attribute($this->env, $this->source, $context["profile_fields"], "LANG_NAME", [], "any", false, false, false, 73);
+                echo twig_get_attribute($this->env, $this->source, $context["profile_fields"], "LANG_NAME", [], "any", false, false, false, 72);
                 echo $this->extensions['phpbb\template\twig\extension']->lang("COLON");
-                if (twig_get_attribute($this->env, $this->source, $context["profile_fields"], "S_REQUIRED", [], "any", false, false, false, 73)) {
+                if (twig_get_attribute($this->env, $this->source, $context["profile_fields"], "S_REQUIRED", [], "any", false, false, false, 72)) {
                     echo " *";
                 }
                 echo "</label>
 \t\t\t";
-                // line 74
-                if (twig_get_attribute($this->env, $this->source, $context["profile_fields"], "LANG_EXPLAIN", [], "any", false, false, false, 74)) {
+                // line 73
+                if (twig_get_attribute($this->env, $this->source, $context["profile_fields"], "LANG_EXPLAIN", [], "any", false, false, false, 73)) {
                     echo "<br /><span>";
-                    echo twig_get_attribute($this->env, $this->source, $context["profile_fields"], "LANG_EXPLAIN", [], "any", false, false, false, 74);
+                    echo twig_get_attribute($this->env, $this->source, $context["profile_fields"], "LANG_EXPLAIN", [], "any", false, false, false, 73);
                     echo "</span>";
                 }
-                // line 75
+                // line 74
                 echo "\t\t\t";
-                if (twig_get_attribute($this->env, $this->source, $context["profile_fields"], "ERROR", [], "any", false, false, false, 75)) {
+                if (twig_get_attribute($this->env, $this->source, $context["profile_fields"], "ERROR", [], "any", false, false, false, 74)) {
                     echo "<br /><span class=\"error\">";
-                    echo twig_get_attribute($this->env, $this->source, $context["profile_fields"], "ERROR", [], "any", false, false, false, 75);
+                    echo twig_get_attribute($this->env, $this->source, $context["profile_fields"], "ERROR", [], "any", false, false, false, 74);
                     echo "</span>";
                 }
                 echo "</dt>
 \t\t\t<dd>";
-                // line 76
-                echo twig_get_attribute($this->env, $this->source, $context["profile_fields"], "FIELD", [], "any", false, false, false, 76);
+                // line 75
+                echo twig_get_attribute($this->env, $this->source, $context["profile_fields"], "FIELD", [], "any", false, false, false, 75);
                 echo "</dd>
 \t\t</dl>
 \t";
@@ -275,25 +274,25 @@ class __TwigTemplate_0a817aa5ccf6e411f3d02e747f949b2574c23dbeeafb5f7b5c95d79614d
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['profile_fields'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 79
+            // line 78
             echo "\t";
         }
-        // line 80
+        // line 79
         echo "
 \t";
+        // line 80
         // line 81
-        // line 82
         echo "\t</fieldset>
 \t</div>
 </div>
 ";
-        // line 85
+        // line 84
         if (($context["CAPTCHA_TEMPLATE"] ?? null)) {
-            // line 86
+            // line 85
             echo "\t";
             $value = 8;
             $context['definition']->set('CAPTCHA_TAB_INDEX', $value);
-            // line 87
+            // line 86
             echo "\t";
             $location = (("" . ($context["CAPTCHA_TEMPLATE"] ?? null)) . "");
             $namespace = false;
@@ -302,57 +301,57 @@ class __TwigTemplate_0a817aa5ccf6e411f3d02e747f949b2574c23dbeeafb5f7b5c95d79614d
                 $previous_look_up_order = $this->env->getNamespaceLookUpOrder();
                 $this->env->setNamespaceLookUpOrder(array($namespace, '__main__'));
             }
-            $this->loadTemplate((("" . ($context["CAPTCHA_TEMPLATE"] ?? null)) . ""), "ucp_register.html", 87)->display($context);
+            $this->loadTemplate((("" . ($context["CAPTCHA_TEMPLATE"] ?? null)) . ""), "ucp_register.html", 86)->display($context);
             if ($namespace) {
                 $this->env->setNamespaceLookUpOrder($previous_look_up_order);
             }
         }
-        // line 89
+        // line 88
         echo "
 ";
-        // line 90
+        // line 89
         if (($context["S_COPPA"] ?? null)) {
-            // line 91
+            // line 90
             echo "<div class=\"panel\">
 \t<div class=\"inner\">
 
 \t<h4>";
-            // line 94
+            // line 93
             echo $this->extensions['phpbb\template\twig\extension']->lang("COPPA_COMPLIANCE");
             echo "</h4>
 
 \t<p>";
-            // line 96
+            // line 95
             echo $this->extensions['phpbb\template\twig\extension']->lang("COPPA_EXPLAIN");
             echo "</p>
 \t</div>
 </div>
 ";
         }
-        // line 100
+        // line 99
         echo "
 ";
+        // line 100
         // line 101
-        // line 102
         echo "
 <div class=\"panel\">
 \t<div class=\"inner\">
 
 \t<fieldset class=\"submit-buttons\">
 \t\t";
-        // line 107
+        // line 106
         echo ($context["S_HIDDEN_FIELDS"] ?? null);
         echo "
 \t\t<input type=\"reset\" value=\"";
-        // line 108
+        // line 107
         echo $this->extensions['phpbb\template\twig\extension']->lang("RESET");
         echo "\" name=\"reset\" class=\"button2\" />&nbsp;
 \t\t<input type=\"submit\" tabindex=\"9\" name=\"submit\" id=\"submit\" value=\"";
-        // line 109
+        // line 108
         echo $this->extensions['phpbb\template\twig\extension']->lang("SUBMIT");
         echo "\" class=\"button1 default-submit-action\" />
 \t\t";
-        // line 110
+        // line 109
         echo ($context["S_FORM_TOKEN"] ?? null);
         echo "
 \t</fieldset>
@@ -362,7 +361,7 @@ class __TwigTemplate_0a817aa5ccf6e411f3d02e747f949b2574c23dbeeafb5f7b5c95d79614d
 </form>
 
 ";
-        // line 117
+        // line 116
         $location = "overall_footer.html";
         $namespace = false;
         if (strpos($location, '@') === 0) {
@@ -370,7 +369,7 @@ class __TwigTemplate_0a817aa5ccf6e411f3d02e747f949b2574c23dbeeafb5f7b5c95d79614d
             $previous_look_up_order = $this->env->getNamespaceLookUpOrder();
             $this->env->setNamespaceLookUpOrder(array($namespace, '__main__'));
         }
-        $this->loadTemplate("overall_footer.html", "ucp_register.html", 117)->display($context);
+        $this->loadTemplate("overall_footer.html", "ucp_register.html", 116)->display($context);
         if ($namespace) {
             $this->env->setNamespaceLookUpOrder($previous_look_up_order);
         }
@@ -388,7 +387,7 @@ class __TwigTemplate_0a817aa5ccf6e411f3d02e747f949b2574c23dbeeafb5f7b5c95d79614d
 
     public function getDebugInfo()
     {
-        return array (  366 => 117,  356 => 110,  352 => 109,  348 => 108,  344 => 107,  337 => 102,  336 => 101,  333 => 100,  326 => 96,  321 => 94,  316 => 91,  314 => 90,  311 => 89,  297 => 87,  293 => 86,  291 => 85,  286 => 82,  285 => 81,  282 => 80,  279 => 79,  270 => 76,  261 => 75,  255 => 74,  241 => 73,  238 => 72,  234 => 71,  228 => 69,  225 => 68,  224 => 67,  221 => 66,  209 => 65,  201 => 62,  196 => 61,  193 => 60,  192 => 59,  188 => 57,  187 => 56,  179 => 53,  174 => 52,  166 => 49,  159 => 48,  151 => 45,  146 => 44,  138 => 41,  131 => 40,  128 => 39,  126 => 38,  120 => 36,  117 => 35,  111 => 34,  103 => 31,  93 => 26,  90 => 25,  85 => 22,  83 => 21,  76 => 19,  71 => 16,  69 => 15,  58 => 9,  49 => 2,  37 => 1,);
+        return array (  365 => 116,  355 => 109,  351 => 108,  347 => 107,  343 => 106,  336 => 101,  335 => 100,  332 => 99,  325 => 95,  320 => 93,  315 => 90,  313 => 89,  310 => 88,  296 => 86,  292 => 85,  290 => 84,  285 => 81,  284 => 80,  281 => 79,  278 => 78,  269 => 75,  260 => 74,  254 => 73,  240 => 72,  237 => 71,  233 => 70,  227 => 68,  224 => 67,  223 => 66,  220 => 65,  208 => 64,  200 => 61,  195 => 60,  192 => 59,  191 => 58,  188 => 57,  187 => 56,  179 => 53,  174 => 52,  166 => 49,  159 => 48,  151 => 45,  146 => 44,  138 => 41,  131 => 40,  128 => 39,  126 => 38,  120 => 36,  117 => 35,  111 => 34,  103 => 31,  93 => 26,  90 => 25,  85 => 22,  83 => 21,  76 => 19,  71 => 16,  69 => 15,  58 => 9,  49 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
