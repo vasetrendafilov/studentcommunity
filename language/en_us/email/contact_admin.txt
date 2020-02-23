@@ -1,23 +1,23 @@
 
-Hello {TO_USERNAME},
+Здраво {TO_USERNAME},
 
-The following is an e-mail sent to you through the administration contact page on "{SITENAME}".
+Следнава порака е пратена преку контакт на модераторот на "{SITENAME}".
 
 <!-- IF S_IS_REGISTERED -->
-The message has been sent from an account on the site.
-Username: {FROM_USERNAME}
-E-mail address: {FROM_EMAIL_ADDRESS}
-IP Address: {FROM_IP_ADDRESS}
-Profile: {U_FROM_PROFILE}
+Пораката е пратена од веќе постоечки корисник на форумот:
+Корисник: {FROM_USERNAME}
+Емаил адреса: {FROM_EMAIL_ADDRESS}
+IP адреса: {FROM_IP_ADDRESS}
+Профил: {U_FROM_PROFILE}
 <!-- ELSE -->
-The message was sent from a guest who specified the following contact information:
-Name: {FROM_USERNAME}
-E-mail address: {FROM_EMAIL_ADDRESS}
-IP Address: {FROM_IP_ADDRESS}
+Пораката е пратена од гостин кој ги навел следниве податоци:
+Име: {FROM_USERNAME}
+Емаил адреса: {FROM_EMAIL_ADDRESS}
+IP адреса: {FROM_IP_ADDRESS}
 <!-- ENDIF -->
 
 
-Message sent to you follows
+Пораката која е пратена:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 {MESSAGE}

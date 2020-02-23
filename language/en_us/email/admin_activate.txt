@@ -1,13 +1,13 @@
-Subject: Activate user account
+Subject:Aктивација на корисничката сметка
 
-Hello,
+Здраво,
 
-The account owned by "{USERNAME}" has been deactivated or newly created, you should check the details of this user (if required) and handle it appropriately.
+Оваа корисничка сметка  со корисничкото име "{USERNAME}" е деактивирана или ново креирана, потребно е да ги проверите деталите на овој корисник и соодветно да се справите со него.
 
-Use this link to view the user's profile:
+Користи го следниов линк за да го проверите корисникот:
 {U_USER_DETAILS}
 
-You may activate the account immediately by clicking on this link:
+За да го активирате веднаш оваа корисничка сметка, користете го следниов линк:
 {U_ACTIVATE}
 
 {EMAIL_SIG}

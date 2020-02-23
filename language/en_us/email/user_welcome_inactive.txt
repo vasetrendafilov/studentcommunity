@@ -1,21 +1,20 @@
-Subject: Welcome to "{SITENAME}"
+Subject: ДоброДојдовте на "{SITENAME}"
 
 {WELCOME_MSG}
 
-Please keep this email for your records. Your account information is as follows:
-
 ----------------------------
-Username: {USERNAME}
+Корсник: {USERNAME}
 
 Board URL: {U_BOARD}
 ----------------------------
 
-Please visit the following link in order to activate your account:
+Ве молиме посетете го следниов линк со цел да ја активирате корисничката сметка:
 
 {U_ACTIVATE}
 
-Your password has been securely stored in our database and cannot be retrieved. In the event that it is forgotten, you will be able to reset it using the email address associated with your account.
+Вашата лозинка е безбедно сторнирана во нашата база и не може да биде преземена. Во случај да ја заборавите, ќе ви биде овозоможено да ја ресетирате користејќи ја вашата емаил адреса која е поврзана со вашата корисничка сметка.
 
-Thank you for registering.
+Благодарност за регистрацијата.
+
 
 {EMAIL_SIG}

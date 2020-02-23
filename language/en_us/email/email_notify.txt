@@ -1,16 +1,16 @@
-Subject: "{SITENAME}" - Email a friend
+Subject: "{SITENAME}" - Порака од пријател
 
-Hello {TO_USERNAME},
+Здраво {TO_USERNAME},
 
-This email was sent from "{SITENAME}" by {FROM_USERNAME} who thought you may be interested in the following topic:
+Оваа порака е пратена на "{SITENAME}" од {FROM_USERNAME} кој мисли дека сте заинтересирани за следнава тема:
 
 {TOPIC_NAME}
 
-You can find it at:
+Можете да повеќе да видите на:
 
 {U_TOPIC}
 
-A message from {FROM_USERNAME} may also be included below. Please note that this message has not been seen or approved by the board administrators. If you wish to complain about having received this email please contact the board administrator at {BOARD_CONTACT}. Please quote the message headers when contacting this address.
+Порака пратена од {FROM_USERNAME} е дадена подоле. Оваа порака не е видена или не е прифатена од board модератор. Ако сакате да ја пријавите оваа порака што ја добивте ве молиме контактирајте го модераторот {BOARD_CONTACT}. Ве молиме цитирајте ја пораката пред да пријавите на модераторот.
 
 ----------
 

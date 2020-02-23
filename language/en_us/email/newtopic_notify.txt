@@ -1,17 +1,17 @@
-Subject: New topic notification - "{FORUM_NAME}"
-List-Unsubscribe: <{U_STOP_WATCHING_FORUM}>
+Subject: Нова тема објавена - "{FORUM_NAME}"
+Unsubscribe: <{U_STOP_WATCHING_FORUM}>
 
-Hello {USERNAME},
+Здраво {USERNAME},
 
-You are receiving this notification because you are watching the forum "{FORUM_NAME}" at "{SITENAME}". This forum has received a new topic<!-- IF AUTHOR_NAME != '' --> by {AUTHOR_NAME}<!-- ENDIF --> since your last visit, "{TOPIC_TITLE}". You can use the following link to view the forum, no more notifications will be sent until you visit the forum.
+Ја добивате оваа порака од форумот "{FORUM_NAME}" на "{SITENAME}". Овој форум има нова тема<!-- IF AUTHOR_NAME != '' --> од {AUTHOR_NAME}<!-- ENDIF --> последна ваша посета, "{TOPIC_TITLE}". Можете да го искористите овој линк за да пристапите на форумот, повеќе нема да Ви се испраќа известувања се додека го посетувате форумот.
 
 {U_FORUM}
 
-To see new topic directly, visit the following link:
+Директно да го посетите линкот со новата тема на дискусија:
 
 {U_TOPIC}
 
-If you no longer wish to watch this forum you can either click the "Unsubscribe forum" link found in the forum above, or by clicking the following link:
+Доколку не сакате повеќе да ги следите новостите на форумот, притисните "Unsubscribe".
 
 {U_STOP_WATCHING_FORUM}
 
