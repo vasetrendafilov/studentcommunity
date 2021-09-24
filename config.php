@@ -4,9 +4,9 @@
 $dbms = 'phpbb\\db\\driver\\mysqli';
 $dbhost = 'localhost';
 $dbport = '';
-$dbname = 'studentcommunity';
-$dbuser = 'root';
-$dbpasswd = '';
+$dbname = 'id12460141_student';
+$dbuser = 'id12460141_vase';
+$dbpasswd = 'vase0137';
 $table_prefix = 'phpbb_';
 $phpbb_adm_relative_path = 'adm/';
 $acm_type = 'phpbb\\cache\\driver\\file';

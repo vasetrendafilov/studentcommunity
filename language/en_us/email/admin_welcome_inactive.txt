@@ -1,17 +1,19 @@
-Subject: ДоброДојдовте на "{SITENAME}"
+Subject: Welcome to "{SITENAME}"
 
 {WELCOME_MSG}
 
+Please keep this email for your records. Your account information is as follows:
+
 ----------------------------
-Корисничко име: {USERNAME}
+Username: {USERNAME}
 
 Board URL: {U_BOARD}
 ----------------------------
 
-Вашата корисничка сметка е моментално неактивирана. Потребно е модераторот да одобри пред да се најавите. Ќе добиете емаил порака, откако ќе бидете прифатени.
+Your account is currently inactive and will need to be approved by an administrator before you can log in. Another email will be sent when this has occurred.
 
-Вашата лозинка е безбедно сторнирана во нашата база и не може да биде преземена. Во случај да ја заборавите, ќе ви биде овозоможено да ја ресетирате користејќи ја вашата емаил адреса која е поврзана со вашата корисничка сметка.
+Your password has been securely stored in our database and cannot be retrieved. In the event that it is forgotten, you will be able to reset it using the email address associated with your account.
 
-Благодарарност за регистрацијата.
+Thank you for registering.
 
 {EMAIL_SIG}

@@ -57,6 +57,9 @@ code, samp {
 img {
 	border: 0;
 }
+.forum-desc.row1 div img{
+	width: 40px;
+}
 
 h1 {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -849,10 +852,6 @@ td.name {
 
 .row1 {
 	background-color: #F9F9F9;
-}
-
-.forum-desc.row1 div img{
-	width: 50px;
 }
 
 table.zebra-table tbody tr:nth-child(odd) {

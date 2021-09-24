@@ -22,32 +22,6 @@ var phpbbAlertTimer = null;
 
 phpbb.isTouch = (window && typeof window.ontouchstart !== 'undefined');
 
-const toggleSwitch = document.querySelector('.theme-switch input[type=\"checkbox\"]');
-
-function switchTheme(e) {
-  if (e.target.checked) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-  }
-  else {
-      document.documentElement.setAttribute('data-theme', 'light');
-  }
-}
-
-toggleSwitch.addEventListener('change', switchTheme, false);
-function switchTheme(e) {
-  if (e.target.checked) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      localStorage.setItem('theme', 'dark'); //add this
-  }
-  else {
-      document.documentElement.setAttribute('data-theme', 'light');
-      localStorage.setItem('theme', 'light'); //add this
-  }
-}
-  if (currentTheme === 'dark') {
-      toggleSwitch.checked = true;
-  }
-
 // Add ajax pre-filter to prevent cross-domain script execution
 $.ajaxPrefilter(function(s) {
 	if (s.crossDomain) {
@@ -1845,5 +1819,32 @@ $(function() {
 		phpbb.toggleSelectSettings($this);
 	});
 });
+const toggleSwitch = document.querySelector('.theme-switch input[type=\"checkbox\"]');
+
+function switchTheme(e) {
+  if (e.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+  }
+  else {
+      document.documentElement.setAttribute('data-theme', 'light');
+  }
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+function switchTheme(e) {
+  if (e.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark'); //add this
+  }
+  else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light'); //add this
+  }
+}
+  if (currentTheme === 'dark') {
+      toggleSwitch.checked = true;
+  }
+
+
 
 })(jQuery); // Avoid conflicts with other libraries

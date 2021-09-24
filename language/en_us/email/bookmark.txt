@@ -1,19 +1,20 @@
-Subject: Известување -> Нов коментар на темата - "{TOPIC_TITLE}"
+Subject: Topic reply notification - "{TOPIC_TITLE}"
 
-Здраво {USERNAME},
+Hello {USERNAME},
 
-Го добивате ова известување, бидејќи оваа тема ја имате маркирано, "{TOPIC_TITLE}" на "{SITENAME}", добивте нов коментар од последната ваша посета. Можете да го посетите линкот за да ги видите останатите коментари во врска со темата,повеќе нема да добивате известување се додека ја посетувате темата.
+You are receiving this notification because a topic you bookmarked, "{TOPIC_TITLE}" at "{SITENAME}", has received a reply since your last visit. You can use the following link to view the replies made, no more notifications will be sent until you visit the topic.
 
-Ако сакате да го видите најновиот пост од последната ваша посета, кликнете на следниов линк:
+If you want to view the newest post made since your last visit, click the following link:
 {U_NEWEST_POST}
 
-Ако сакате да ја видите темата, кликнете на следниов линк:
+If you want to view the topic, click the following link:
 {U_TOPIC}
 
-Ако сакате да го видите форумот, кликнете на следниов линк:
+If you want to view the forum, click the following link:
 {U_FORUM}
 
-Ако повеќе не сакате да добивате известувања во врска со одговорите на вашите маркери, тогаш променете ги поставките за:
+If you no longer wish to receive updates about replies to bookmarks, please update your notification settings here:
+
 {U_NOTIFICATION_SETTINGS}
 
 {EMAIL_SIG}

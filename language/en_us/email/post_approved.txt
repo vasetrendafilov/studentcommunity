@@ -1,13 +1,13 @@
-Subject: Објавата е прифатена - "{POST_SUBJECT}"
+Subject: Post approved - "{POST_SUBJECT}"
 
-Здраво {USERNAME},
+Hello {USERNAME},
 
-Ве известуваме дека вашата објава "{POST_SUBJECT}" на "{SITENAME}" е прифатена од модератор.
+You are receiving this notification because your post "{POST_SUBJECT}" at "{SITENAME}" was approved by a moderator or administrator.
 
-Доколку сакате да ја видите објавата:
+If you want to view the post, click the following link:
 {U_VIEW_POST}
 
-Доколку сакате да ја видите темата:
+If you want to view the topic, click the following link:
 {U_VIEW_TOPIC}
 
 {EMAIL_SIG}
